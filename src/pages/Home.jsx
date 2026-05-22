@@ -93,10 +93,10 @@ export default function Home() {
       </section>
 
       {/* Countdown */}
-      <section className="bg-ncwala-red text-ncwala-white py-12">
+      <section className="bg-ncwala-red text-ncwala-white py-12 ngoni-pattern">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="font-raleway text-xs uppercase tracking-[0.3em] text-ncwala-gold mb-2">Chipata, Eastern Province, Zambia</p>
-          <h2 className="font-cinzel text-2xl mb-8">Time Until Ncwala 2026</h2>
+          <h2 className="font-cinzel text-2xl mb-8 reveal">Time Until Ncwala 2026</h2>
           <div className="grid grid-cols-4 gap-3 max-w-xl mx-auto">
             {[
               { label: 'Days', value: countdown.days },
@@ -124,14 +124,14 @@ export default function Home() {
 
       {/* Overview */}
       <section className="py-20 max-w-7xl mx-auto px-4">
-        <h2 className="font-cinzel text-4xl text-ncwala-black mb-12 text-center">What is Ncwala?</h2>
+        <div className="reveal"><h2 className="font-cinzel text-4xl text-ncwala-black mb-4 text-center section-heading">What is Ncwala?</h2></div><div className="mb-12"></div>
         <div className="grid md:grid-cols-3 gap-8">
           {[
             { title: 'Royal Heritage', description: 'Ncwala is deeply rooted in the royal traditions of the Ngoni kingdom, maintaining centuries of cultural practices and ceremonial protocols.' },
             { title: 'First Fruits Festival', description: "The ceremony celebrates the first harvest, giving thanks for the year's bounty and seeking blessings for future harvests." },
             { title: 'Cultural Celebration', description: 'Featuring traditional dances, music, royal regalia, and community gatherings that unite the Ngoni people and visitors from around the world.' },
           ].map((item, idx) => (
-            <div key={idx} className="border-l-4 border-ncwala-gold pl-6">
+            <div key={idx} className="border-l-4 border-ncwala-gold pl-6 card-hover p-4">
               <h3 className="font-cinzel text-2xl text-ncwala-black mb-3">{item.title}</h3>
               <p className="text-gray-700">{item.description}</p>
             </div>
@@ -142,7 +142,7 @@ export default function Home() {
       {/* Photo Highlights */}
       <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="font-cinzel text-4xl text-ncwala-black mb-4 text-center">Photo Highlights</h2>
+          <h2 className="font-cinzel text-4xl text-ncwala-black mb-4 text-center section-heading">Photo Highlights</h2>
           <p className="font-raleway text-gray-500 text-center mb-12 text-sm uppercase tracking-widest">Photography by Andy Luki Jr.</p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {galleryImages.map((img, idx) => (
@@ -168,7 +168,7 @@ export default function Home() {
 
       {/* FAQ */}
       <section className="py-20 max-w-7xl mx-auto px-4">
-        <h2 className="font-cinzel text-4xl text-ncwala-black mb-12 text-center">Frequently Asked Questions</h2>
+        <h2 className="font-cinzel text-4xl text-ncwala-black mb-4 text-center section-heading">Frequently Asked Questions</h2><div className="mb-12"></div>
         <div className="space-y-6 max-w-3xl mx-auto">
           {[
             { q: 'When is the Ncwala Ceremony held?', a: 'Ncwala 2026 takes place in August in Chipata, Eastern Province. Specific dates are announced by the Ngoni royal family.' },
@@ -186,7 +186,7 @@ export default function Home() {
       </section>
 
       {/* Newsletter */}
-      <section className="bg-gradient-to-r from-ncwala-red to-ncwala-black py-16">
+      <section className="bg-gradient-to-r from-ncwala-red to-ncwala-black py-16 ngoni-pattern">
         <div className="max-w-7xl mx-auto px-4">
           <NewsletterSignup />
         </div>

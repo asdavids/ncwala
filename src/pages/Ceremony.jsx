@@ -98,10 +98,10 @@ export default function Ceremony() {
  </div>
 
  {/* What is Ncwala */}
- <div className="bg-ncwala-black text-ncwala-white py-20 px-4">
+ <div className="bg-ncwala-black text-ncwala-white py-20 px-4 gold-top-edge ngoni-pattern">
  <div className="max-w-4xl mx-auto">
  <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3 text-center">Understanding the Ceremony</p>
- <h2 className="font-cinzel text-3xl mb-8 text-center">What is Ncwala?</h2>
+ <h2 className="font-cinzel text-3xl mb-8 text-center section-heading">What is Ncwala?</h2>
  <div className="space-y-5 font-garamond text-xl text-gray-200 leading-relaxed">
  <p>Ncwala — sometimes spelled N'cwala or Nc'wala — is the First Fruits Ceremony of the Ngoni people of Eastern Province, Zambia. It is simultaneously an agricultural festival, a royal ritual, an ancestral communion, and a cultural celebration of the highest order.</p>
  <p>At its core, Ncwala embodies a profound belief: the harvest belongs first to the ancestors and to the king who represents them. Before any Ngoni may eat the new crops of the year — the maize, sorghum, pumpkins, and other staples — the paramount chief must consume the first fruits in a sacred ritual. This act releases the harvest for community consumption and simultaneously thanks the ancestors for their blessing.</p>
@@ -114,7 +114,7 @@ export default function Ceremony() {
  {/* Spiritual Significance */}
  <div className="max-w-7xl mx-auto px-4 py-20">
  <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3 text-center">Why It Matters</p>
- <h2 className="font-cinzel text-3xl text-ncwala-black mb-12 text-center">Spiritual Significance</h2>
+ <h2 className="font-cinzel text-3xl text-ncwala-black mb-12 text-center section-heading">Spiritual Significance</h2>
  <div className="grid md:grid-cols-3 gap-8">
  {[
  { title: 'Gratitude', text: 'The primary spiritual purpose of Ncwala is thanksgiving. The Ngoni express profound gratitude to Ngwenyama (the Supreme Being) and to the amadlozi (ancestors) for the year\'s harvest and the community\'s wellbeing.', icon: '' },
@@ -146,7 +146,7 @@ export default function Ceremony() {
  <div className="bg-gray-50 py-20 px-4">
  <div className="max-w-7xl mx-auto">
  <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3 text-center">From Preparation to Celebration</p>
- <h2 className="font-cinzel text-3xl text-ncwala-black mb-12 text-center">The Seven Phases of Ncwala</h2>
+ <h2 className="font-cinzel text-3xl text-ncwala-black mb-12 text-center section-heading">The Seven Phases of Ncwala</h2>
  <div className="grid grid-cols-4 md:grid-cols-7 gap-2 mb-8">
  {phases.map((p, idx) => (
  <button
@@ -197,7 +197,7 @@ export default function Ceremony() {
  {/* Visitor Etiquette */}
  <div className="max-w-7xl mx-auto px-4 py-20">
  <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3 text-center">For Visitors</p>
- <h2 className="font-cinzel text-3xl text-ncwala-black mb-4 text-center">Attending with Respect</h2>
+ <h2 className="font-cinzel text-3xl text-ncwala-black mb-4 text-center section-heading">Attending with Respect</h2>
  <p className="font-garamond text-lg text-gray-600 max-w-2xl mx-auto text-center mb-12">
  Ncwala welcomes visitors warmly — the Ngoni are proud to share their culture. But this is a sacred ceremony, not a festival. These guidelines will help you experience Ncwala in a way that is respectful and deeply meaningful.
  </p>

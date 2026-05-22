@@ -90,7 +90,7 @@ export default function NgoniPeople() {
  </div>
 
  {/* Intro quote */}
- <div className="bg-ncwala-black text-ncwala-white py-16 px-4">
+ <div className="bg-ncwala-black text-ncwala-white py-16 px-4 gold-top-edge ngoni-pattern">
  <div className="max-w-4xl mx-auto text-center">
  <p className="font-garamond text-xl md:text-2xl leading-relaxed italic text-gray-200">
  "The Ngoni are not simply a tribe — they are a civilisation. A people who walked from the southern tip of Africa to the Great Lakes, who absorbed nations into their fold, who fought empires and survived, and who celebrate their story every year in the ancient ceremony of Ncwala."
@@ -122,10 +122,10 @@ export default function NgoniPeople() {
  <div className="bg-gray-50 py-20 px-4">
  <div className="max-w-7xl mx-auto">
  <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3 text-center">What Defines Us</p>
- <h2 className="font-cinzel text-3xl text-ncwala-black mb-12 text-center">Culture & Traditions</h2>
+ <h2 className="font-cinzel text-3xl text-ncwala-black mb-12 text-center section-heading">Culture & Traditions</h2>
  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
  {cultureCards.map((card, idx) => (
- <div key={idx} className="bg-white p-6 border-t-4 border-ncwala-gold shadow-sm hover:shadow-md transition-shadow">
+ <div key={idx} className="bg-white p-6 border-t-4 border-ncwala-gold shadow-sm card-hover">
  <div className="text-3xl mb-4">{card.icon}</div>
  <h3 className="font-cinzel text-lg text-ncwala-black mb-3">{card.title}</h3>
  <p className="font-garamond text-gray-700 leading-relaxed">{card.content}</p>
@@ -190,7 +190,7 @@ export default function NgoniPeople() {
  {/* Contemporary Life */}
  <div className="max-w-7xl mx-auto px-4 py-20">
  <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3 text-center">Today & Tomorrow</p>
- <h2 className="font-cinzel text-3xl text-ncwala-black mb-12 text-center">The Ngoni in the Modern World</h2>
+ <h2 className="font-cinzel text-3xl text-ncwala-black mb-12 text-center section-heading">The Ngoni in the Modern World</h2>
  <div className="grid md:grid-cols-2 gap-8">
  {modernLife.map((item, idx) => (
  <div key={idx} className="border-l-4 border-ncwala-gold pl-6">

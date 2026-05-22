@@ -1,66 +1,102 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Share2, Heart, Music, Mail } from 'lucide-react'
+import { Mail, MapPin, Calendar } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-ncwala-black text-ncwala-white mt-20 border-t border-ncwala-gold">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          {/* About */}
-          <div>
-            <h3 className="font-cinzel text-ncwala-gold mb-4">About Ncwala</h3>
-            <p className="text-sm text-gray-300">
-              Preserving and celebrating the rich cultural heritage of the Ngoni people and their sacred First Fruits Ceremony.
+    <footer className="bg-ncwala-black text-ncwala-white ngoni-pattern">
+      {/* Gold top border */}
+      <div className="h-0.5 bg-gradient-to-r from-transparent via-ncwala-gold to-transparent"></div>
+
+      <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="grid md:grid-cols-4 gap-12 mb-12">
+
+          {/* Brand */}
+          <div className="md:col-span-1">
+            <span className="font-cinzel-decorative text-2xl text-ncwala-gold block mb-4">Ncwala</span>
+            <p className="font-garamond text-gray-400 leading-relaxed text-sm mb-6">
+              Preserving and celebrating the sacred First Fruits Ceremony and the living heritage of the Ngoni people of Eastern Province, Zambia.
             </p>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-cinzel text-ncwala-gold mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link to="/ceremony" className="text-gray-300 hover:text-ncwala-gold transition-colors">Ceremony Guide</Link></li>
-              <li><Link to="/history" className="text-gray-300 hover:text-ncwala-gold transition-colors">History</Link></li>
-              <li><Link to="/travel" className="text-gray-300 hover:text-ncwala-gold transition-colors">Travel</Link></li>
-              <li><Link to="/news" className="text-gray-300 hover:text-ncwala-gold transition-colors">News</Link></li>
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h3 className="font-cinzel text-ncwala-gold mb-4">Contact</h3>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li>Chipata, Eastern Province</li>
-              <li>Zambia</li>
-              <li><a href="mailto:info@ncwala.com" className="hover:text-ncwala-gold transition-colors">info@ncwala.com</a></li>
-            </ul>
-          </div>
-
-          {/* Social */}
-          <div>
-            <h3 className="font-cinzel text-ncwala-gold mb-4">Follow</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-ncwala-gold transition-colors">
-                <Share2 size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-ncwala-gold transition-colors">
-                <Music size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-ncwala-gold transition-colors">
-                <Heart size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-ncwala-gold transition-colors">
-                <Mail size={20} />
-              </a>
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 text-gray-400 text-xs font-raleway">
+                <MapPin size={12} className="text-ncwala-gold flex-shrink-0" />
+                Chipata, Eastern Province, Zambia
+              </div>
+              <div className="flex items-center gap-2 text-gray-400 text-xs font-raleway">
+                <Calendar size={12} className="text-ncwala-gold flex-shrink-0" />
+                Annually every August
+              </div>
+              <div className="flex items-center gap-2 text-gray-400 text-xs font-raleway">
+                <Mail size={12} className="text-ncwala-gold flex-shrink-0" />
+                info@ncwala.vercel.app
+              </div>
             </div>
+          </div>
+
+          {/* Discover */}
+          <div>
+            <h3 className="font-cinzel text-xs uppercase tracking-widest text-ncwala-gold mb-5 pb-2 border-b border-ncwala-gold/20">Discover</h3>
+            <ul className="space-y-3">
+              {[
+                { href: '/history', label: 'History' },
+                { href: '/ngoni', label: 'Ngoni People' },
+                { href: '/ceremony', label: 'The Ceremony' },
+                { href: '/gallery', label: 'Gallery' },
+                { href: '/news', label: 'News & Articles' },
+              ].map(link => (
+                <li key={link.href}>
+                  <Link to={link.href} className="font-raleway text-xs text-gray-400 hover:text-ncwala-gold transition-colors uppercase tracking-widest">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Visit */}
+          <div>
+            <h3 className="font-cinzel text-xs uppercase tracking-widest text-ncwala-gold mb-5 pb-2 border-b border-ncwala-gold/20">Visit</h3>
+            <ul className="space-y-3">
+              {[
+                { href: '/travel', label: 'Getting There' },
+                { href: '/accommodation', label: 'Accommodation' },
+                { href: '/transport', label: 'Transport' },
+                { href: '/directory', label: 'Directory' },
+                { href: '/contact', label: 'Contact Us' },
+              ].map(link => (
+                <li key={link.href}>
+                  <Link to={link.href} className="font-raleway text-xs text-gray-400 hover:text-ncwala-gold transition-colors uppercase tracking-widest">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Ncwala 2026 */}
+          <div>
+            <h3 className="font-cinzel text-xs uppercase tracking-widest text-ncwala-gold mb-5 pb-2 border-b border-ncwala-gold/20">Ncwala 2026</h3>
+            <p className="font-garamond text-gray-400 text-sm leading-relaxed mb-4">
+              Preparations are underway for Ncwala 2026. Join thousands of visitors in Chipata this August.
+            </p>
+            <Link to="/blog/ncwala-2026-preparations-underway" className="btn-secondary text-xs py-2 px-4">
+              Learn More
+            </Link>
           </div>
         </div>
 
-        <div className="border-t border-ncwala-gold/30 pt-8">
-          <p className="text-center text-sm text-gray-400">
-            © {currentYear} Ncwala Ceremony. All rights reserved. | <a href="/privacy" className="hover:text-ncwala-gold">Privacy Policy</a> | <a href="/terms" className="hover:text-ncwala-gold">Terms</a>
+        {/* Bottom bar */}
+        <div className="border-t border-ncwala-gold/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="font-raleway text-xs text-gray-600 uppercase tracking-widest">
+            &copy; {currentYear} Ncwala Ceremony. All rights reserved.
+          </p>
+          <p className="font-raleway text-xs text-gray-600 uppercase tracking-widest">
+            Photography by Andy Luki Jr.
+          </p>
+          <p className="font-raleway text-xs text-gray-600">
+            Chipata, Eastern Province, Zambia
           </p>
         </div>
       </div>

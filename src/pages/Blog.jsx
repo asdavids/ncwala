@@ -75,12 +75,12 @@ export default function Blog() {
  {/* Article Body */}
  <div className="max-w-4xl mx-auto px-4 py-12">
  {/* Excerpt / standfirst */}
- <p className="font-garamond text-xl md:text-2xl text-gray-600 leading-relaxed border-l-4 border-ncwala-gold pl-6 mb-10 italic">
+ <p className="font-garamond text-xl md:text-2xl text-gray-600 leading-relaxed border-l-4 border-ncwala-gold pl-6 mb-10 italic reveal">
  {article.excerpt}
  </p>
 
  {/* Body paragraphs */}
- <div className="space-y-6">
+ <div className="space-y-6 article-body">
  {article.body.split('\n\n').map((paragraph, idx) => {
  // Make pull quote out of short paragraphs that are clearly quotes
  if (paragraph.startsWith('"') && paragraph.length < 200) {

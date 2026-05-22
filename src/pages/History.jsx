@@ -125,7 +125,7 @@ export default function History() {
  {/* Timeline */}
  <div className="bg-gray-50 py-20 px-4">
  <div className="max-w-4xl mx-auto">
- <h2 className="font-cinzel text-3xl text-ncwala-black mb-12 text-center">The Full Timeline</h2>
+ <h2 className="font-cinzel text-3xl text-ncwala-black mb-12 text-center section-heading">The Full Timeline</h2>
  <div className="relative">
  <div className="absolute left-6 md:left-8 top-0 bottom-0 w-0.5 bg-ncwala-gold/30"></div>
  <div className="space-y-8">
@@ -162,7 +162,7 @@ export default function History() {
  </div>
 
  {/* Pull Quote */}
- <div className="bg-ncwala-black text-ncwala-white py-20 px-4">
+ <div className="bg-ncwala-black text-ncwala-white py-20 px-4 gold-top-edge ngoni-pattern">
  <div className="max-w-3xl mx-auto text-center">
  <div className="text-ncwala-gold text-6xl font-cinzel-decorative mb-4">"</div>
  <blockquote className="font-garamond text-2xl md:text-3xl italic leading-relaxed">
