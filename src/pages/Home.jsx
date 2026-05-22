@@ -1,31 +1,33 @@
 import React, { useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, X } from 'lucide-react'
 import NewsletterSignup from '../components/NewsletterSignup'
-import SkeletonLoader from '../components/SkeletonLoader'
 import heroBg from '../assets/hero-bg.webp'
+import gallery1 from '../assets/gallery-1.webp'
+import gallery2 from '../assets/gallery-2.webp'
+import gallery3 from '../assets/gallery-3.webp'
+import gallery4 from '../assets/gallery-4.webp'
+
+const galleryImages = [
+  { src: gallery1, caption: 'Warriors in procession' },
+  { src: gallery2, caption: 'The spirit of celebration' },
+  { src: gallery3, caption: 'Royal regalia & tradition' },
+  { src: gallery4, caption: 'The dance of the ancestors' },
+]
 
 export default function Home() {
-  const [countdown, setCountdown] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  })
+  const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
+  const [lightbox, setLightbox] = useState(null)
 
   useEffect(() => {
     const today = new Date()
     const currentYear = today.getFullYear()
     let ncwalaDate = new Date(currentYear, 7, 15)
-
-    if (today > ncwalaDate) {
-      ncwalaDate = new Date(currentYear + 1, 7, 15)
-    }
+    if (today > ncwalaDate) ncwalaDate = new Date(currentYear + 1, 7, 15)
 
     const interval = setInterval(() => {
       const now = new Date().getTime()
       const distance = ncwalaDate - now
-
       setCountdown({
         days: Math.floor(distance / (1000 * 60 * 60 * 24)),
         hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
@@ -33,27 +35,25 @@ export default function Home() {
         seconds: Math.floor((distance % (1000 * 60)) / 1000),
       })
     }, 1000)
-
     return () => clearInterval(interval)
+  }, [])
+
+  // Close lightbox on escape
+  useEffect(() => {
+    const handleKey = (e) => { if (e.key === 'Escape') setLightbox(null) }
+    window.addEventListener('keydown', handleKey)
+    return () => window.removeEventListener('keydown', handleKey)
   }, [])
 
   return (
     <>
       <Helmet>
         <title>Ncwala Ceremony - First Fruits of the Ngoni People | Zambia</title>
-        <meta name="description" content="Welcome to the Ncwala Ceremony, the First Fruits Festival of the Ngoni people in Eastern Province, Zambia. Explore royal traditions, culture, and ceremonial celebrations." />
-        <meta name="keywords" content="Ncwala, Ngoni, First Fruits, Ceremony, Zambia, Eastern Province, Chipata, Cultural Heritage" />
+        <meta name="description" content="Welcome to the Ncwala Ceremony, the First Fruits Festival of the Ngoni people in Eastern Province, Zambia." />
         <meta property="og:title" content="Ncwala Ceremony - First Fruits of the Ngoni People" />
-        <meta property="og:description" content="Discover the sacred Ncwala Ceremony, a celebration of the Ngoni people's royal heritage and agricultural traditions." />
         <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">
-          {JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'WebSite',
-            'name': 'Ncwala Ceremony',
-            'url': 'https://ncwala.vercel.app',
-          })}
+          {JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebSite', 'name': 'Ncwala Ceremony', 'url': 'https://ncwala.vercel.app' })}
         </script>
       </Helmet>
 
@@ -78,10 +78,7 @@ export default function Home() {
           <p className="text-base md:text-lg max-w-md drop-shadow-lg text-gray-200 mb-10">
             Celebrating the wisdom, strength, and spirit of our ancestors. Preserving culture. Inspiring generations.
           </p>
-          <a
-            href="/history"
-            className="inline-block bg-ncwala-gold text-ncwala-black font-raleway font-bold text-sm uppercase tracking-widest px-8 py-4 hover:bg-ncwala-white transition-colors duration-300"
-          >
+          <a href="/history" className="inline-block bg-ncwala-gold text-ncwala-black font-raleway font-bold text-sm uppercase tracking-widest px-8 py-4 hover:bg-ncwala-white transition-colors duration-300">
             Discover Our Story
           </a>
         </div>
@@ -102,12 +99,8 @@ export default function Home() {
               { label: 'Seconds', value: countdown.seconds },
             ].map((item) => (
               <div key={item.label} className="bg-ncwala-black rounded-lg p-6">
-                <div className="font-cinzel-decorative text-4xl mb-2">
-                  {String(item.value).padStart(2, '0')}
-                </div>
-                <div className="font-raleway text-sm uppercase tracking-widest">
-                  {item.label}
-                </div>
+                <div className="font-cinzel-decorative text-4xl mb-2">{String(item.value).padStart(2, '0')}</div>
+                <div className="font-raleway text-sm uppercase tracking-widest">{item.label}</div>
               </div>
             ))}
           </div>
@@ -116,31 +109,16 @@ export default function Home() {
 
       {/* Overview Section */}
       <section className="py-20 max-w-7xl mx-auto px-4">
-        <h2 className="font-cinzel text-4xl text-ncwala-black mb-12 text-center">
-          What is Ncwala?
-        </h2>
+        <h2 className="font-cinzel text-4xl text-ncwala-black mb-12 text-center">What is Ncwala?</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {[
-            {
-              title: 'Royal Heritage',
-              description: 'Ncwala is deeply rooted in the royal traditions of the Ngoni kingdom, maintaining centuries of cultural practices and ceremonial protocols.',
-            },
-            {
-              title: 'First Fruits Festival',
-              description: "The ceremony celebrates the first harvest, giving thanks for the year's bounty and seeking blessings for future harvests.",
-            },
-            {
-              title: 'Cultural Celebration',
-              description: 'Featuring traditional dances, music, royal regalia, and community gatherings that unite the Ngoni people and visitors from around the world.',
-            },
+            { title: 'Royal Heritage', description: 'Ncwala is deeply rooted in the royal traditions of the Ngoni kingdom, maintaining centuries of cultural practices and ceremonial protocols.' },
+            { title: 'First Fruits Festival', description: "The ceremony celebrates the first harvest, giving thanks for the year's bounty and seeking blessings for future harvests." },
+            { title: 'Cultural Celebration', description: 'Featuring traditional dances, music, royal regalia, and community gatherings that unite the Ngoni people and visitors from around the world.' },
           ].map((item, idx) => (
             <div key={idx} className="border-l-4 border-ncwala-gold pl-6">
-              <h3 className="font-cinzel text-2xl text-ncwala-black mb-3">
-                {item.title}
-              </h3>
-              <p className="text-gray-700">
-                {item.description}
-              </p>
+              <h3 className="font-cinzel text-2xl text-ncwala-black mb-3">{item.title}</h3>
+              <p className="text-gray-700">{item.description}</p>
             </div>
           ))}
         </div>
@@ -149,48 +127,68 @@ export default function Home() {
       {/* Photo Highlights */}
       <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="font-cinzel text-4xl text-ncwala-black mb-12 text-center">
-            Photo Highlights
-          </h2>
-          <SkeletonLoader count={4} variant="gallery" />
+          <h2 className="font-cinzel text-4xl text-ncwala-black mb-4 text-center">Photo Highlights</h2>
+          <p className="font-raleway text-gray-500 text-center mb-12 text-sm uppercase tracking-widest">
+            Photography by Andy Luki Jr.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {galleryImages.map((img, idx) => (
+              <div
+                key={idx}
+                className="relative overflow-hidden cursor-pointer group aspect-[3/4]"
+                onClick={() => setLightbox(idx)}
+              >
+                <img
+                  src={img.src}
+                  alt={img.caption}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end">
+                  <p className="font-raleway text-white text-sm px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {img.caption}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
+      {/* Lightbox */}
+      {lightbox !== null && (
+        <div
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+          onClick={() => setLightbox(null)}
+        >
+          <button className="absolute top-4 right-4 text-white hover:text-ncwala-gold">
+            <X size={32} />
+          </button>
+          <img
+            src={galleryImages[lightbox].src}
+            alt={galleryImages[lightbox].caption}
+            className="max-h-[90vh] max-w-[90vw] object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
+          <p className="absolute bottom-6 font-cinzel text-ncwala-gold text-sm tracking-widest">
+            {galleryImages[lightbox].caption}
+          </p>
+        </div>
+      )}
+
       {/* FAQ Section */}
       <section className="py-20 max-w-7xl mx-auto px-4">
-        <h2 className="font-cinzel text-4xl text-ncwala-black mb-12 text-center">
-          Frequently Asked Questions
-        </h2>
+        <h2 className="font-cinzel text-4xl text-ncwala-black mb-12 text-center">Frequently Asked Questions</h2>
         <div className="space-y-6 max-w-3xl mx-auto">
           {[
-            {
-              q: 'When is the Ncwala Ceremony held?',
-              a: 'Ncwala typically occurs in August each year, with specific dates announced by the Ngoni royal family. The exact timing aligns with the harvest season and royal calendars.',
-            },
-            {
-              q: 'Where does the ceremony take place?',
-              a: 'The ceremony is held in Chipata, Eastern Province, Zambia, at the royal palace and surrounding areas where traditional events unfold.',
-            },
-            {
-              q: 'Can visitors attend Ncwala?',
-              a: 'Yes, visitors from around the world are welcome to attend. We recommend booking accommodation and transport well in advance, as the event attracts many guests.',
-            },
-            {
-              q: 'What should I bring to the ceremony?',
-              a: 'Bring respectful attire, comfortable walking shoes, sun protection, and a camera. Guides recommend arriving early to secure good viewing spots.',
-            },
-            {
-              q: 'Is photography allowed?',
-              a: 'Photography is generally permitted during public ceremonies, but always respect local customs and ask permission before photographing individuals.',
-            },
+            { q: 'When is the Ncwala Ceremony held?', a: 'Ncwala typically occurs in August each year, with specific dates announced by the Ngoni royal family. The exact timing aligns with the harvest season and royal calendars.' },
+            { q: 'Where does the ceremony take place?', a: 'The ceremony is held in Chipata, Eastern Province, Zambia, at the royal palace and surrounding areas where traditional events unfold.' },
+            { q: 'Can visitors attend Ncwala?', a: 'Yes, visitors from around the world are welcome to attend. We recommend booking accommodation and transport well in advance, as the event attracts many guests.' },
+            { q: 'What should I bring to the ceremony?', a: 'Bring respectful attire, comfortable walking shoes, sun protection, and a camera. Guides recommend arriving early to secure good viewing spots.' },
+            { q: 'Is photography allowed?', a: 'Photography is generally permitted during public ceremonies, but always respect local customs and ask permission before photographing individuals.' },
           ].map((item, idx) => (
             <div key={idx} className="border-b border-gray-200 pb-6">
-              <h3 className="font-cinzel text-lg text-ncwala-red mb-2">
-                {item.q}
-              </h3>
-              <p className="text-gray-700">
-                {item.a}
-              </p>
+              <h3 className="font-cinzel text-lg text-ncwala-red mb-2">{item.q}</h3>
+              <p className="text-gray-700">{item.a}</p>
             </div>
           ))}
         </div>
