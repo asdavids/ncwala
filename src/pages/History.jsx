@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import gallery1 from '../assets/gallery-1.webp'
 import gallery3 from '../assets/gallery-3.webp'
+import gallery5 from '../assets/gallery-5.webp'
+import gallery9 from '../assets/gallery-9.webp'
 
 const timeline = [
   {
@@ -108,44 +110,53 @@ export default function History() {
         </p>
       </div>
 
+      {/* Photo + Intro split */}
+      <div className="max-w-7xl mx-auto px-4 pb-16">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <img src={gallery5} alt="Ngoni warrior in profile" className="w-full rounded-lg shadow-xl object-cover h-96" />
+          <div className="space-y-4 font-garamond text-xl text-gray-700 leading-relaxed">
+            <p>The Ngoni warrior is one of the most recognisable figures in southern African history — disciplined, proud, and bound by a code of honour that stretches back to the Zulu heartland.</p>
+            <p>Every element of their regalia tells a story: the beaded headband marks lineage, the leopard skin signals rank, the ceremonial weapon connects its bearer to generations of warriors who came before.</p>
+            <p>When you watch the ingoma dance at Ncwala, you are watching history move. These are not re-enactors. These are the descendants of Zwangendaba's people, and they remember.</p>
+          </div>
+        </div>
+      </div>
+
       {/* Timeline */}
-      <div className="max-w-4xl mx-auto px-4 pb-20">
-        <h2 className="font-cinzel text-3xl text-ncwala-black mb-12 text-center">The Full Timeline</h2>
-        <div className="relative">
-          {/* Vertical line */}
-          <div className="absolute left-6 md:left-8 top-0 bottom-0 w-0.5 bg-ncwala-gold/30"></div>
-
-          <div className="space-y-8">
-            {timeline.map((item, idx) => (
-              <div key={idx} className="relative pl-16 md:pl-20">
-                {/* Dot */}
-                <div className="absolute left-4 md:left-6 top-2 w-4 h-4 rounded-full bg-ncwala-gold border-4 border-ncwala-white shadow"></div>
-
-                <div
-                  className="bg-white border border-gray-100 shadow-sm rounded-lg overflow-hidden cursor-pointer hover:shadow-md transition-shadow"
-                  onClick={() => setExpanded(expanded === idx ? null : idx)}
-                >
-                  <div className="p-6">
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <span className="font-raleway text-xs text-ncwala-gold uppercase tracking-widest">{item.period}</span>
-                        <h3 className="font-cinzel text-xl text-ncwala-black mt-1">{item.title}</h3>
-                      </div>
-                      <span className="text-ncwala-gold text-2xl flex-shrink-0">{expanded === idx ? '−' : '+'}</span>
-                    </div>
-
-                    {expanded === idx && (
-                      <div className="mt-4 pt-4 border-t border-gray-100">
-                        <p className="font-garamond text-lg text-gray-700 leading-relaxed">{item.content}</p>
-                        <div className="mt-4 inline-block bg-ncwala-red/10 border-l-4 border-ncwala-red px-4 py-2">
-                          <span className="font-raleway text-xs text-ncwala-red uppercase tracking-widest">{item.highlight}</span>
+      <div className="bg-gray-50 py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-cinzel text-3xl text-ncwala-black mb-12 text-center">The Full Timeline</h2>
+          <div className="relative">
+            <div className="absolute left-6 md:left-8 top-0 bottom-0 w-0.5 bg-ncwala-gold/30"></div>
+            <div className="space-y-8">
+              {timeline.map((item, idx) => (
+                <div key={idx} className="relative pl-16 md:pl-20">
+                  <div className="absolute left-4 md:left-6 top-2 w-4 h-4 rounded-full bg-ncwala-gold border-4 border-gray-50 shadow"></div>
+                  <div
+                    className="bg-white border border-gray-100 shadow-sm rounded-lg overflow-hidden cursor-pointer hover:shadow-md transition-shadow"
+                    onClick={() => setExpanded(expanded === idx ? null : idx)}
+                  >
+                    <div className="p-6">
+                      <div className="flex items-start justify-between gap-4">
+                        <div>
+                          <span className="font-raleway text-xs text-ncwala-gold uppercase tracking-widest">{item.period}</span>
+                          <h3 className="font-cinzel text-xl text-ncwala-black mt-1">{item.title}</h3>
                         </div>
+                        <span className="text-ncwala-gold text-2xl flex-shrink-0">{expanded === idx ? '−' : '+'}</span>
                       </div>
-                    )}
+                      {expanded === idx && (
+                        <div className="mt-4 pt-4 border-t border-gray-100">
+                          <p className="font-garamond text-lg text-gray-700 leading-relaxed">{item.content}</p>
+                          <div className="mt-4 inline-block bg-ncwala-red/10 border-l-4 border-ncwala-red px-4 py-2">
+                            <span className="font-raleway text-xs text-ncwala-red uppercase tracking-widest">{item.highlight}</span>
+                          </div>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -161,13 +172,14 @@ export default function History() {
         </div>
       </div>
 
-      {/* Legacy Section */}
+      {/* Legacy Section — two photos */}
       <div className="max-w-7xl mx-auto px-4 py-20">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <img src={gallery3} alt="Ngoni elder in royal regalia" className="w-full rounded-lg shadow-xl object-cover h-96" />
-            <p className="font-raleway text-xs text-gray-400 mt-2 text-center">Royal Ngoni elder in ceremonial regalia — @Andy Luki Jr. Photography</p>
-          </div>
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <img src={gallery3} alt="Ngoni elder in royal regalia" className="w-full rounded-lg shadow-xl object-cover h-80" />
+          <img src={gallery9} alt="Ngoni warriors with spears" className="w-full rounded-lg shadow-xl object-cover h-80" />
+        </div>
+        <p className="font-raleway text-xs text-gray-400 text-center mb-12">Photography by @Andy Luki Jr.</p>
+        <div className="grid md:grid-cols-2 gap-16 items-start">
           <div>
             <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3">Living Heritage</p>
             <h2 className="font-cinzel text-3xl text-ncwala-black mb-6">The Legacy Lives On</h2>
@@ -178,10 +190,18 @@ export default function History() {
               <p>
                 The ceremony has evolved but its soul has not changed. The paramount chief still blesses the first fruits. The warriors still dance. The drums still call people home. And every August, Chipata becomes the cultural capital of Africa for a few extraordinary days.
               </p>
-              <p>
-                Ncwala is not a museum piece. It is a living, breathing expression of identity — performed with the same sincerity today as it was in the time of Mpezeni I.
-              </p>
             </div>
+          </div>
+          <div className="space-y-4 font-garamond text-lg text-gray-700 leading-relaxed">
+            <p>
+              Ncwala is not a museum piece. It is a living, breathing expression of identity — performed with the same sincerity today as it was in the time of Mpezeni I.
+            </p>
+            <p>
+              The warriors in leopard skins carrying spears are not in costume. They are in uniform — the uniform of an unbroken tradition, worn with immense pride by men who know exactly what it means.
+            </p>
+            <p>
+              To witness Ncwala is to understand something profound about human culture: that identity is not accidental. It must be chosen, practised, celebrated, and passed on. The Ngoni have done this for over two centuries without interruption.
+            </p>
           </div>
         </div>
       </div>

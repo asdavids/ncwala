@@ -7,12 +7,16 @@ import gallery1 from '../assets/gallery-1.webp'
 import gallery2 from '../assets/gallery-2.webp'
 import gallery3 from '../assets/gallery-3.webp'
 import gallery4 from '../assets/gallery-4.webp'
+import gallery5 from '../assets/gallery-5.webp'
+import gallery11 from '../assets/gallery-11.webp'
 
 const galleryImages = [
   { src: gallery1, caption: 'Warriors in procession' },
   { src: gallery2, caption: 'The spirit of celebration' },
   { src: gallery3, caption: 'Royal regalia & tradition' },
   { src: gallery4, caption: 'The dance of the ancestors' },
+  { src: gallery5, caption: 'A warrior's gaze' },
+  { src: gallery11, caption: 'Joy of Ncwala' },
 ]
 
 export default function Home() {

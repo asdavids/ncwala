@@ -2,6 +2,8 @@ import React from 'react'
 import { Helmet } from 'react-helmet-async'
 import gallery2 from '../assets/gallery-2.webp'
 import gallery4 from '../assets/gallery-4.webp'
+import gallery8 from '../assets/gallery-8.webp'
+import gallery10 from '../assets/gallery-10.webp'
 
 const cultureCards = [
   {
@@ -87,7 +89,7 @@ export default function NgoniPeople() {
         </div>
       </div>
 
-      {/* Intro */}
+      {/* Intro quote */}
       <div className="bg-ncwala-black text-ncwala-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="font-garamond text-xl md:text-2xl leading-relaxed italic text-gray-200">
@@ -98,22 +100,21 @@ export default function NgoniPeople() {
       </div>
 
       {/* Who Are the Ngoni */}
-      <div className="max-w-4xl mx-auto px-4 py-16">
-        <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3 text-center">Origins & Identity</p>
-        <h2 className="font-cinzel text-3xl text-ncwala-black mb-8 text-center">Who Are the Ngoni?</h2>
-        <div className="space-y-5 font-garamond text-xl text-gray-700 leading-relaxed">
-          <p>
-            The Ngoni (also written N'goni or Angoni) are a Bantu-speaking people whose origins lie among the Nguni peoples of South Africa's KwaZulu-Natal region. Their defining historical event was the great northward migration known as the Mfecane — a flight from the wars ignited by the rise of the Zulu Kingdom in the early 19th century.
-          </p>
-          <p>
-            Under the leadership of the legendary Zwangendaba Jere, the Ngoni crossed the Zambezi River during a solar eclipse in 1835, eventually settling in what is now Eastern Province, Zambia. Here, the son of Zwangendaba — Mpezeni — established a powerful kingdom that bears his name to this day.
-          </p>
-          <p>
-            The Ngoni are notable for their policy of cultural absorption: captured and allied peoples were adopted into the kingdom, bringing linguistic and cultural diversity. Today, many people of Chewa, Tumbuka, or mixed heritage identify as Ngoni — cultural identity transcends blood lineage.
-          </p>
-          <p>
-            The population of Ngoni-identifying people in Eastern Province numbers in the hundreds of thousands, with a broader diaspora across Zambia and internationally. Chipata — Eastern Province's capital — serves as the cultural and historical heart of the kingdom.
-          </p>
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3">Origins & Identity</p>
+            <h2 className="font-cinzel text-3xl text-ncwala-black mb-6">Who Are the Ngoni?</h2>
+            <div className="space-y-4 font-garamond text-lg text-gray-700 leading-relaxed">
+              <p>The Ngoni (also written N'goni or Angoni) are a Bantu-speaking people whose origins lie among the Nguni peoples of South Africa's KwaZulu-Natal region. Their defining historical event was the great northward migration known as the Mfecane — a flight from the wars ignited by the rise of the Zulu Kingdom in the early 19th century.</p>
+              <p>Under the leadership of the legendary Zwangendaba Jere, the Ngoni crossed the Zambezi River during a solar eclipse in 1835, eventually settling in what is now Eastern Province, Zambia. Here, the son of Zwangendaba — Mpezeni — established a powerful kingdom that bears his name to this day.</p>
+              <p>The Ngoni are notable for their policy of cultural absorption: captured and allied peoples were adopted into the kingdom, bringing linguistic and cultural diversity. Today, many people of Chewa, Tumbuka, or mixed heritage identify as Ngoni — cultural identity transcends blood lineage.</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            <img src={gallery4} alt="Ngoni dancer" className="w-full h-64 object-cover rounded-lg shadow-lg" />
+            <img src={gallery10} alt="Woman in Ngoni beadwork" className="w-full h-64 object-cover rounded-lg shadow-lg mt-8" />
+          </div>
         </div>
       </div>
 
@@ -134,30 +135,40 @@ export default function NgoniPeople() {
         </div>
       </div>
 
-      {/* Language */}
+      {/* Music & Performance spotlight */}
       <div className="max-w-7xl mx-auto px-4 py-20">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3">Sound of the Kingdom</p>
+            <h2 className="font-cinzel text-3xl text-ncwala-black mb-6">Music, Song & Performance</h2>
+            <div className="space-y-4 font-garamond text-lg text-gray-700 leading-relaxed">
+              <p>Music at Ncwala is not entertainment — it is communication. When the ingoma drums begin, they are speaking to the ancestors. When warriors sing in unison, they are affirming brotherhood forged in historical fire.</p>
+              <p>Beyond the traditional ceremonies, Ncwala has grown into a broader cultural festival that attracts contemporary artists who blend Ngoni musical traditions with modern performance. Zambian artists perform in full cultural attire, weaving the old and new into something vital and forward-looking.</p>
+              <p>This fusion reflects the Ngoni capacity for absorption and evolution that has always defined them — a culture confident enough in its identity to embrace change without losing itself.</p>
+            </div>
+          </div>
+          <img src={gallery8} alt="Performer in traditional dress" className="w-full h-96 object-cover rounded-lg shadow-xl" />
+        </div>
+      </div>
+
+      {/* Language */}
+      <div className="bg-ncwala-black py-20 px-4">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
           <div>
             <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3">The Living Language</p>
-            <h2 className="font-cinzel text-3xl text-ncwala-black mb-6">Language & Oral Tradition</h2>
-            <div className="space-y-4 font-garamond text-lg text-gray-700 leading-relaxed">
-              <p>
-                The Ngoni speak Zangoni (Ngoni language), a Bantu language with strong Nguni/Zulu roots. Over centuries of settlement in Eastern Zambia, it absorbed words and structures from Chewa, Tumbuka, and other neighbouring languages, creating a unique hybrid tongue.
-              </p>
-              <p>
-                Zangoni is not merely a language of daily communication — it is a vessel of history. Praise poetry (izibongo) in Zangoni narrates the genealogy of kings, the battles won, and the journeys taken. When an induna recites royal praises at Ncwala, he is performing a living history lesson.
-              </p>
-              <p>
-                Oral tradition remains the primary keeper of Ngoni history. Elders are revered as living libraries. The careful transmission of stories, songs, and protocols across generations is itself a sacred duty.
-              </p>
+            <h2 className="font-cinzel text-3xl text-ncwala-white mb-6">Language & Oral Tradition</h2>
+            <div className="space-y-4 font-garamond text-lg text-gray-300 leading-relaxed">
+              <p>The Ngoni speak Zangoni (Ngoni language), a Bantu language with strong Nguni/Zulu roots. Over centuries of settlement in Eastern Zambia, it absorbed words and structures from Chewa, Tumbuka, and other neighbouring languages, creating a unique hybrid tongue.</p>
+              <p>Zangoni is not merely a language of daily communication — it is a vessel of history. Praise poetry (izibongo) in Zangoni narrates the genealogy of kings, the battles won, and the journeys taken. When an induna recites royal praises at Ncwala, he is performing a living history lesson.</p>
+              <p>Oral tradition remains the primary keeper of Ngoni history. Elders are revered as living libraries. The careful transmission of stories, songs, and protocols across generations is itself a sacred duty.</p>
             </div>
           </div>
           <div>
             <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-4">Key Vocabulary</p>
-            <div className="bg-ncwala-black rounded-lg overflow-hidden">
+            <div className="rounded-lg overflow-hidden border border-white/10">
               {vocabulary.map((v, idx) => (
-                <div key={idx} className={`flex gap-4 px-6 py-4 ${idx % 2 === 0 ? 'bg-ncwala-black' : 'bg-white/5'}`}>
-                  <span className="font-cinzel text-ncwala-gold min-w-[120px] text-sm">{v.word}</span>
+                <div key={idx} className={`flex gap-4 px-6 py-4 ${idx % 2 === 0 ? 'bg-white/5' : 'bg-white/10'}`}>
+                  <span className="font-cinzel text-ncwala-gold min-w-[130px] text-sm">{v.word}</span>
                   <span className="font-raleway text-gray-300 text-sm">{v.meaning}</span>
                 </div>
               ))}
@@ -168,10 +179,10 @@ export default function NgoniPeople() {
 
       {/* Photo break */}
       <div className="relative h-64 overflow-hidden">
-        <img src={gallery4} alt="Ngoni dancer" className="w-full h-full object-cover object-top" />
+        <img src={gallery10} alt="Ngoni woman in beadwork regalia" className="w-full h-full object-cover object-top" />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
           <p className="font-cinzel-decorative text-ncwala-white text-2xl md:text-4xl text-center px-4 drop-shadow-lg">
-            "We dance so our ancestors know we have not forgotten them."
+            "We dress so our ancestors recognise us."
           </p>
         </div>
       </div>

@@ -4,6 +4,9 @@ import gallery1 from '../assets/gallery-1.webp'
 import gallery2 from '../assets/gallery-2.webp'
 import gallery3 from '../assets/gallery-3.webp'
 import gallery4 from '../assets/gallery-4.webp'
+import gallery6 from '../assets/gallery-6.webp'
+import gallery7 from '../assets/gallery-7.webp'
+import gallery9 from '../assets/gallery-9.webp'
 
 const phases = [
   {
@@ -40,7 +43,7 @@ const phases = [
   },
   {
     phase: 'Phase 5',
-    name: 'Ukudla Kwenkosi — The First Fruits Ritual',
+    name: 'Ukudla Kwenkosi — The First Fruits',
     timing: 'Main Day — Midday',
     colour: 'border-green-700',
     description: `The central ritual of Ncwala: the paramount chief consumes the first fruits of the new harvest — maize, sorghum, and other crops — before anyone else in the kingdom may eat them. This act simultaneously gives thanks to the ancestors for the harvest, seeks blessing for the year ahead, and affirms the chief's spiritual authority over the land and its people. Until the chief has performed this ritual, the new crops are considered spiritually unripe and are not consumed. After the ritual, feasting begins.`,
@@ -83,10 +86,10 @@ export default function Ceremony() {
         <meta name="description" content="Everything you need to know about the Ncwala First Fruits Ceremony: its spiritual significance, the seven phases, what to expect, and how to attend respectfully." />
       </Helmet>
 
-      {/* Hero */}
-      <div className="relative h-72 md:h-96 overflow-hidden">
-        <img src={gallery1} alt="Ncwala ceremony warriors" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-ncwala-black"></div>
+      {/* Hero — aerial dance shot */}
+      <div className="relative h-72 md:h-[500px] overflow-hidden">
+        <img src={gallery7} alt="Ncwala ceremony dance" className="w-full h-full object-cover object-center" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-ncwala-black"></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
           <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-[0.4em] mb-3">The Sacred First Fruits</p>
           <h1 className="font-cinzel-decorative text-4xl md:text-6xl text-ncwala-white drop-shadow-lg">The Ncwala Ceremony</h1>
@@ -94,47 +97,29 @@ export default function Ceremony() {
         </div>
       </div>
 
-      {/* What is Ncwala — Deep Explanation */}
+      {/* What is Ncwala */}
       <div className="bg-ncwala-black text-ncwala-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3 text-center">Understanding the Ceremony</p>
           <h2 className="font-cinzel text-3xl mb-8 text-center">What is Ncwala?</h2>
           <div className="space-y-5 font-garamond text-xl text-gray-200 leading-relaxed">
-            <p>
-              Ncwala — sometimes spelled N'cwala or Nc'wala — is the First Fruits Ceremony of the Ngoni people of Eastern Province, Zambia. It is simultaneously an agricultural festival, a royal ritual, an ancestral communion, and a cultural celebration of the highest order.
-            </p>
-            <p>
-              At its core, Ncwala embodies a profound belief: the harvest belongs first to the ancestors and to the king who represents them. Before any Ngoni may eat the new crops of the year — the maize, sorghum, pumpkins, and other staples — the paramount chief must consume the first fruits in a sacred ritual. This act releases the harvest for community consumption and simultaneously thanks the ancestors for their blessing.
-            </p>
-            <p>
-              The timing of Ncwala follows a lunar and agricultural calendar, traditionally falling around August — the tail end of winter in southern Africa, when the first new crops are ripening. The paramount chief, advised by traditional specialists, determines the exact dates each year.
-            </p>
-            <p>
-              Ncwala is not a performance created for tourists. It is a living religious and cultural observance that has been performed continuously for over 200 years. Visitors are welcome — and the Ngoni are generous hosts — but they attend as respectful guests at a sacred event, not as an audience at a show.
-            </p>
+            <p>Ncwala — sometimes spelled N'cwala or Nc'wala — is the First Fruits Ceremony of the Ngoni people of Eastern Province, Zambia. It is simultaneously an agricultural festival, a royal ritual, an ancestral communion, and a cultural celebration of the highest order.</p>
+            <p>At its core, Ncwala embodies a profound belief: the harvest belongs first to the ancestors and to the king who represents them. Before any Ngoni may eat the new crops of the year — the maize, sorghum, pumpkins, and other staples — the paramount chief must consume the first fruits in a sacred ritual. This act releases the harvest for community consumption and simultaneously thanks the ancestors for their blessing.</p>
+            <p>The timing of Ncwala follows a lunar and agricultural calendar, traditionally falling around August — the tail end of winter in southern Africa, when the first new crops are ripening. The paramount chief, advised by traditional specialists, determines the exact dates each year.</p>
+            <p>Ncwala is not a performance created for tourists. It is a living religious and cultural observance that has been performed continuously for over 200 years. Visitors are welcome — and the Ngoni are generous hosts — but they attend as respectful guests at a sacred event, not as an audience at a show.</p>
           </div>
         </div>
       </div>
 
       {/* Spiritual Significance */}
       <div className="max-w-7xl mx-auto px-4 py-20">
+        <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3 text-center">Why It Matters</p>
+        <h2 className="font-cinzel text-3xl text-ncwala-black mb-12 text-center">Spiritual Significance</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {[
-            {
-              title: 'Gratitude',
-              text: 'The primary spiritual purpose of Ncwala is thanksgiving. The Ngoni express profound gratitude to Ngwenyama (the Supreme Being) and to the amadlozi (ancestors) for the year\'s harvest and the community\'s wellbeing.',
-              icon: '🌾',
-            },
-            {
-              title: 'Renewal',
-              text: 'Ncwala marks the new year in the Ngoni cultural calendar — a reset. The old year\'s difficulties are ceremonially released. Blessings for the coming year are sought. It is a moment of collective spiritual cleansing and fresh beginning.',
-              icon: '🌅',
-            },
-            {
-              title: 'Royal Authority',
-              text: 'The ceremony reaffirms the paramount chief\'s spiritual and temporal authority. His ability to release the harvest for consumption — his intermediary role between the living and the ancestors — is demonstrated and renewed annually.',
-              icon: '👑',
-            },
+            { title: 'Gratitude', text: 'The primary spiritual purpose of Ncwala is thanksgiving. The Ngoni express profound gratitude to Ngwenyama (the Supreme Being) and to the amadlozi (ancestors) for the year\'s harvest and the community\'s wellbeing.', icon: '🌾' },
+            { title: 'Renewal', text: 'Ncwala marks the new year in the Ngoni cultural calendar — a reset. The old year\'s difficulties are ceremonially released. Blessings for the coming year are sought. It is a moment of collective spiritual cleansing and fresh beginning.', icon: '🌅' },
+            { title: 'Royal Authority', text: 'The ceremony reaffirms the paramount chief\'s spiritual and temporal authority. His ability to release the harvest for consumption — his intermediary role between the living and the ancestors — is demonstrated and renewed annually.', icon: '👑' },
           ].map((item, idx) => (
             <div key={idx} className="text-center p-8 border border-ncwala-gold/20 hover:border-ncwala-gold transition-colors">
               <div className="text-5xl mb-4">{item.icon}</div>
@@ -145,21 +130,30 @@ export default function Ceremony() {
         </div>
       </div>
 
+      {/* Preparation photo */}
+      <div className="max-w-7xl mx-auto px-4 pb-12">
+        <div className="grid md:grid-cols-2 gap-6 items-center">
+          <img src={gallery6} alt="Warrior preparing headdress" className="w-full h-72 object-cover rounded-lg shadow-xl" />
+          <div>
+            <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3">Before the Dance</p>
+            <h3 className="font-cinzel text-2xl text-ncwala-black mb-4">The Art of Preparation</h3>
+            <p className="font-garamond text-lg text-gray-700 leading-relaxed">Every detail of a warrior's appearance at Ncwala is deliberate. The headdress, the body markings, the arrangement of skins — each element follows a tradition passed from father to son across generations. Preparation itself is a ritual act, a moment of connection with ancestry and identity.</p>
+          </div>
+        </div>
+      </div>
+
       {/* The Seven Phases */}
       <div className="bg-gray-50 py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3 text-center">From Preparation to Celebration</p>
           <h2 className="font-cinzel text-3xl text-ncwala-black mb-12 text-center">The Seven Phases of Ncwala</h2>
-
-          <div className="grid md:grid-cols-7 gap-2 mb-8">
+          <div className="grid grid-cols-4 md:grid-cols-7 gap-2 mb-8">
             {phases.map((p, idx) => (
               <button
                 key={idx}
                 onClick={() => setActivePhase(idx)}
                 className={`py-3 px-2 text-center transition-all font-raleway text-xs uppercase tracking-wide rounded ${
-                  activePhase === idx
-                    ? 'bg-ncwala-red text-white'
-                    : 'bg-white text-gray-600 hover:bg-ncwala-gold/10 border border-gray-200'
+                  activePhase === idx ? 'bg-ncwala-red text-white' : 'bg-white text-gray-600 hover:bg-ncwala-gold/10 border border-gray-200'
                 }`}
               >
                 <div className="font-bold">{p.phase}</div>
@@ -167,7 +161,6 @@ export default function Ceremony() {
               </button>
             ))}
           </div>
-
           <div className={`bg-white border-l-4 ${phases[activePhase].colour} shadow-sm p-8 rounded-r-lg`}>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
@@ -191,14 +184,15 @@ export default function Ceremony() {
         </div>
       </div>
 
-      {/* Photo Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-4 h-64 md:h-80">
-        {[gallery1, gallery2, gallery3, gallery4].map((img, idx) => (
+      {/* Full-width photo strip — all 7 */}
+      <div className="grid grid-cols-4 md:grid-cols-7 h-40 md:h-56">
+        {[gallery1, gallery6, gallery9, gallery3, gallery7, gallery2, gallery4].map((img, idx) => (
           <div key={idx} className="overflow-hidden">
-            <img src={img} alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            <img src={img} alt="" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
           </div>
         ))}
       </div>
+      <p className="font-raleway text-xs text-gray-400 text-center py-2">Photography by @Andy Luki Jr.</p>
 
       {/* Visitor Etiquette */}
       <div className="max-w-7xl mx-auto px-4 py-20">
@@ -220,19 +214,15 @@ export default function Ceremony() {
         </div>
       </div>
 
-      {/* Closing CTA */}
+      {/* CTA */}
       <div className="bg-gradient-to-r from-ncwala-red to-ncwala-black text-ncwala-white py-20 px-4 text-center">
         <h2 className="font-cinzel-decorative text-3xl md:text-4xl mb-4">Experience Ncwala for Yourself</h2>
         <p className="font-garamond text-xl text-gray-300 max-w-2xl mx-auto mb-8">
           No description can fully capture the sound of a thousand warriors dancing, the sight of the paramount chief in royal regalia, or the feeling of being welcomed into a 200-year-old tradition. You have to be there.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/travel" className="inline-block bg-ncwala-gold text-ncwala-black font-raleway font-bold text-sm uppercase tracking-widest px-8 py-4 hover:bg-white transition-colors">
-            Plan Your Visit
-          </a>
-          <a href="/accommodation" className="inline-block border border-ncwala-gold text-ncwala-gold font-raleway font-bold text-sm uppercase tracking-widest px-8 py-4 hover:bg-ncwala-gold hover:text-ncwala-black transition-colors">
-            Find Accommodation
-          </a>
+          <a href="/travel" className="inline-block bg-ncwala-gold text-ncwala-black font-raleway font-bold text-sm uppercase tracking-widest px-8 py-4 hover:bg-white transition-colors">Plan Your Visit</a>
+          <a href="/accommodation" className="inline-block border border-ncwala-gold text-ncwala-gold font-raleway font-bold text-sm uppercase tracking-widest px-8 py-4 hover:bg-ncwala-gold hover:text-ncwala-black transition-colors">Find Accommodation</a>
         </div>
       </div>
     </>
