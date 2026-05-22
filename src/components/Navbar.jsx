@@ -62,12 +62,12 @@ export default function Navbar() {
 
   const isActive = (href) => location.pathname === href
 
-  const dropdownClass = "absolute right-0 top-full mt-2 w-44 bg-ncwala-black border border-ncwala-gold/20 shadow-2xl z-50"
+  const dropdownClass = "absolute right-0 top-8 mt-2 w-44 bg-ncwala-black border border-ncwala-gold/20 shadow-2xl z-[9999]"
   const dropdownItemClass = "block w-full text-left px-5 py-3 font-raleway text-xs uppercase tracking-widest border-b border-white/5 transition-colors"
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-      isScrolled ? 'bg-ncwala-black shadow-lg' : 'bg-ncwala-black/80 backdrop-blur-md'
+      isScrolled ? 'bg-ncwala-black shadow-lg' : 'bg-ncwala-black/90'
     }`}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center h-14">
