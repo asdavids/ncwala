@@ -2,11 +2,25 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Globe, Menu, X, ChevronDown } from 'lucide-react'
 
+const LANGUAGES = [
+  { code: 'en', label: 'English' },
+  { code: 'fr', label: 'Français' },
+  { code: 'es', label: 'Español' },
+  { code: 'pt', label: 'Português' },
+  { code: 'de', label: 'Deutsch' },
+  { code: 'zh-CN', label: '中文' },
+  { code: 'ar', label: 'العربية' },
+  { code: 'hi', label: 'हिन्दी' },
+  { code: 'sw', label: 'Kiswahili' },
+  { code: 'ny', label: 'Chichewa' },
+]
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [moreOpen, setMoreOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
+  const [currentLang, setCurrentLang] = useState('en')
   const location = useLocation()
   const moreRef = useRef(null)
   const langRef = useRef(null)
@@ -32,61 +46,29 @@ export default function Navbar() {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
-  // Aggressively remove Google Translate bar
-  useEffect(() => {
-    const removeBar = () => {
-      // Remove iframe
-      const frame = document.querySelector('iframe.skiptranslate')
-      if (frame) frame.remove()
-      // Reset body position
-      document.body.style.top = '0px'
-      document.body.setAttribute('style', 'top: 0px !important')
-      // Remove the banner
-      const banner = document.querySelector('.goog-te-banner-frame')
-      if (banner) banner.remove()
-    }
-    // Run immediately and on interval to catch late injection
-    removeBar()
-    const interval = setInterval(removeBar, 500)
-    return () => clearInterval(interval)
-  }, [])
-
-  // Load Google Translate script once
-  useEffect(() => {
-    if (document.getElementById('google-translate-script')) return
-    window.googleTranslateElementInit = () => {
-      new window.google.translate.TranslateElement(
-        { pageLanguage: 'en', includedLanguages: 'fr,es,pt,de,zh-CN,ar,hi,sw,ny', layout: 0, autoDisplay: false },
-        'google_translate_element'
-      )
-    }
-    const script = document.createElement('script')
-    script.id = 'google-translate-script'
-    script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
-    document.body.appendChild(script)
-  }, [])
-
-  const translateTo = (langCode) => {
-    const select = document.querySelector('.goog-te-combo')
-    if (select) {
-      select.value = langCode
-      select.dispatchEvent(new Event('change'))
-    }
+  const switchLanguage = (langCode) => {
+    setCurrentLang(langCode)
     setLangOpen(false)
+
+    if (langCode === 'en') {
+      // Restore original English — reload without any translate cookie
+      const url = new URL(window.location.href)
+      url.searchParams.delete('hl')
+      // Remove Google Translate cookie and reload
+      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'
+      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + window.location.hostname
+      window.location.reload()
+      return
+    }
+
+    // Set Google Translate cookie directly — no toolbar needed
+    const cookieValue = `/en/${langCode}`
+    document.cookie = `googtrans=${cookieValue}; path=/`
+    document.cookie = `googtrans=${cookieValue}; path=/; domain=${window.location.hostname}`
+    window.location.reload()
   }
 
-  const languages = [
-    { code: 'en', label: 'English' },
-    { code: 'fr', label: 'Français' },
-    { code: 'es', label: 'Español' },
-    { code: 'pt', label: 'Português' },
-    { code: 'de', label: 'Deutsch' },
-    { code: 'zh-CN', label: '中文' },
-    { code: 'ar', label: 'العربية' },
-    { code: 'hi', label: 'हिन्दी' },
-    { code: 'sw', label: 'Kiswahili' },
-    { code: 'ny', label: 'Chichewa' },
-  ]
+  const currentLangLabel = LANGUAGES.find(l => l.code === currentLang)?.label || 'English'
 
   const primaryLinks = [
     { href: '/', label: 'Home' },
@@ -109,11 +91,11 @@ export default function Navbar() {
   const isActive = (href) => location.pathname === href
 
   const dropdownClass = "absolute right-0 top-8 mt-2 w-44 bg-ncwala-black border border-ncwala-gold/20 shadow-2xl z-[9999]"
-  const dropdownItemClass = "block w-full text-left px-5 py-3 font-raleway text-xs uppercase tracking-widest border-b border-white/5 transition-colors text-gray-300 hover:text-ncwala-gold hover:bg-white/5"
+  const dropdownItemClass = "block w-full text-left px-5 py-3 font-raleway text-xs uppercase tracking-widest border-b border-white/5 transition-colors"
 
   return (
     <>
-      {/* Hidden Google Translate widget */}
+      {/* Hidden Google Translate element — needed for cookie-based translation */}
       <div id="google_translate_element" style={{ display: 'none' }}></div>
 
       <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${
@@ -153,7 +135,11 @@ export default function Navbar() {
                 {moreOpen && (
                   <div className={dropdownClass}>
                     {secondaryLinks.map((link) => (
-                      <Link key={link.href} to={link.href} className={`${dropdownItemClass} ${isActive(link.href) ? 'text-ncwala-gold' : ''}`}>
+                      <Link
+                        key={link.href}
+                        to={link.href}
+                        className={`${dropdownItemClass} ${isActive(link.href) ? 'text-ncwala-gold' : 'text-gray-300 hover:text-ncwala-gold hover:bg-white/5'}`}
+                      >
                         {link.label}
                       </Link>
                     ))}
@@ -168,13 +154,21 @@ export default function Navbar() {
                   className="flex items-center gap-1.5 text-gray-400 hover:text-ncwala-gold transition-colors"
                 >
                   <Globe size={14} />
-                  <span className="font-raleway text-xs uppercase tracking-widest">Translate</span>
+                  <span className="font-raleway text-xs">{currentLangLabel}</span>
                   <ChevronDown size={11} className={`transition-transform duration-200 ${langOpen ? 'rotate-180' : ''}`} />
                 </button>
                 {langOpen && (
                   <div className={dropdownClass}>
-                    {languages.map((lang) => (
-                      <button key={lang.code} onClick={() => translateTo(lang.code)} className={dropdownItemClass}>
+                    {LANGUAGES.map((lang) => (
+                      <button
+                        key={lang.code}
+                        onClick={() => switchLanguage(lang.code)}
+                        className={`${dropdownItemClass} ${
+                          currentLang === lang.code
+                            ? 'text-ncwala-gold bg-white/5'
+                            : 'text-gray-300 hover:text-ncwala-gold hover:bg-white/5'
+                        }`}
+                      >
                         {lang.label}
                       </button>
                     ))}
