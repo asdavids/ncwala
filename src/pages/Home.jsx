@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { ChevronDown } from 'lucide-react'
 import NewsletterSignup from '../components/NewsletterSignup'
 import SkeletonLoader from '../components/SkeletonLoader'
+import heroBg from '../assets/hero-bg.webp'
 
 export default function Home() {
   const [countdown, setCountdown] = useState({
@@ -13,11 +14,9 @@ export default function Home() {
   })
 
   useEffect(() => {
-    // Calculate countdown to next Ncwala (typically August)
     const today = new Date()
     const currentYear = today.getFullYear()
-    // Ncwala is typically in August
-    let ncwalaDate = new Date(currentYear, 7, 15) // August 15
+    let ncwalaDate = new Date(currentYear, 7, 15)
 
     if (today > ncwalaDate) {
       ncwalaDate = new Date(currentYear + 1, 7, 15)
@@ -58,26 +57,36 @@ export default function Home() {
         </script>
       </Helmet>
 
-      {/* Hero Section with Parallax */}
-      <section className="hero bg-gradient-to-b from-ncwala-black to-gray-900" style={{
-        backgroundImage: 'url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&h=630&fit=crop")',
-        backgroundPosition: 'center',
+      {/* Hero Section */}
+      <section className="hero" style={{
+        backgroundImage: `url(${heroBg})`,
+        backgroundPosition: 'center right',
         backgroundSize: 'cover',
       }}>
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 text-center text-ncwala-white py-32">
-          <h1 className="font-cinzel-decorative text-6xl md:text-7xl mb-4 drop-shadow-lg">
-            Ncwala
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-black/10"></div>
+        <div className="relative z-10 max-w-7xl mx-auto px-8 text-left text-ncwala-white py-32 w-full">
+          <p className="font-raleway text-ncwala-gold text-sm uppercase tracking-[0.3em] mb-6">
+            Honoring Our Heritage
+          </p>
+          <h1 className="font-cinzel-decorative text-6xl md:text-8xl mb-4 drop-shadow-lg leading-tight">
+            N'cwala
           </h1>
-          <p className="font-cinzel text-2xl md:text-3xl text-ncwala-gold mb-8 drop-shadow-lg">
+          <div className="w-16 h-0.5 bg-ncwala-gold mb-8"></div>
+          <p className="font-cinzel text-xl md:text-2xl text-ncwala-gold mb-4 drop-shadow-lg">
             The First Fruits Ceremony of the Ngoni People
           </p>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto drop-shadow-lg">
-            A sacred celebration honoring the royal heritage, agricultural traditions, and cultural identity of the Ngoni kingdom in Eastern Province, Zambia
+          <p className="text-base md:text-lg max-w-md drop-shadow-lg text-gray-200 mb-10">
+            Celebrating the wisdom, strength, and spirit of our ancestors. Preserving culture. Inspiring generations.
           </p>
-          <div className="mt-12">
-            <ChevronDown className="mx-auto animate-bounce" size={32} />
-          </div>
+          <a
+            href="/history"
+            className="inline-block bg-ncwala-gold text-ncwala-black font-raleway font-bold text-sm uppercase tracking-widest px-8 py-4 hover:bg-ncwala-white transition-colors duration-300"
+          >
+            Discover Our Story
+          </a>
+        </div>
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
+          <ChevronDown className="text-ncwala-white animate-bounce" size={32} />
         </div>
       </section>
 
@@ -118,7 +127,7 @@ export default function Home() {
             },
             {
               title: 'First Fruits Festival',
-              description: 'The ceremony celebrates the first harvest, giving thanks for the year\'s bounty and seeking blessings for future harvests.',
+              description: "The ceremony celebrates the first harvest, giving thanks for the year's bounty and seeking blessings for future harvests.",
             },
             {
               title: 'Cultural Celebration',
