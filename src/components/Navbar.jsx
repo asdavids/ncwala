@@ -32,6 +32,25 @@ export default function Navbar() {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
+  // Aggressively remove Google Translate bar
+  useEffect(() => {
+    const removeBar = () => {
+      // Remove iframe
+      const frame = document.querySelector('iframe.skiptranslate')
+      if (frame) frame.remove()
+      // Reset body position
+      document.body.style.top = '0px'
+      document.body.setAttribute('style', 'top: 0px !important')
+      // Remove the banner
+      const banner = document.querySelector('.goog-te-banner-frame')
+      if (banner) banner.remove()
+    }
+    // Run immediately and on interval to catch late injection
+    removeBar()
+    const interval = setInterval(removeBar, 500)
+    return () => clearInterval(interval)
+  }, [])
+
   // Load Google Translate script once
   useEffect(() => {
     if (document.getElementById('google-translate-script')) return
