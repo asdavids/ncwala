@@ -15,7 +15,7 @@ const galleryImages = [
   { src: gallery2, caption: 'The spirit of celebration' },
   { src: gallery3, caption: 'Royal regalia & tradition' },
   { src: gallery4, caption: 'The dance of the ancestors' },
-  { src: gallery5, caption: 'A warrior's gaze' },
+  { src: gallery5, caption: "A warrior's gaze" },
   { src: gallery11, caption: 'Joy of Ncwala' },
 ]
 
