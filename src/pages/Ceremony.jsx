@@ -19,10 +19,10 @@ const phases = [
  },
  {
  phase: 'Phase 2',
- name: 'Kuomboka — The Water Ritual',
- timing: 'Days Before',
+ name: 'Ukwanda — Gathering of the People',
+ timing: 'Days Before the Ceremony',
  colour: 'border-blue-600',
- description: `Selected warriors undertake a sacred journey to collect water from significant rivers — water that carries spiritual connection to the ancestral homeland south of the Zambezi. This water is used in ritual preparations for the paramount chief. The journey itself is symbolic, re-enacting the great migration of the Ngoni people northward across rivers and plains. The warriors who carry out this task are chosen for their spiritual purity and bravery.`,
+ description: `In the days before the main ceremony, people converge on Chipata from across Eastern Province and beyond. Sub-chiefs arrive with their retinues in full ceremonial dress. The royal palace grounds fill with warriors, elders, and families. The Ngoni diaspora — from Lusaka, the Copperbelt, and abroad — return home. Drumming and singing fill the air as the kingdom reassembles for its most sacred annual gathering.`,
  rituals: ['Warriors selected for water journey', 'Sacred rivers visited', 'Water collected in ceremonial vessels', 'Return journey with ritual observances', 'Water presented to royal household'],
  },
  {
