@@ -186,18 +186,37 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {isOpen && (
-          <div className="md:hidden bg-ncwala-black border-t border-ncwala-gold/20">
+          <div className="md:hidden bg-ncwala-black border-t border-ncwala-gold/20 max-h-[80vh] overflow-y-auto">
             {[...primaryLinks, ...secondaryLinks].map((link) => (
               <Link
                 key={link.href}
                 to={link.href}
-                className={`block px-6 py-3 font-raleway text-xs uppercase tracking-widest border-b border-white/5 transition-colors ${
-                  isActive(link.href) ? 'text-ncwala-gold' : 'text-gray-300 hover:text-ncwala-gold'
+                className={`block px-6 py-4 font-raleway text-xs uppercase tracking-widest border-b border-white/5 transition-colors ${
+                  isActive(link.href) ? 'text-ncwala-gold bg-white/5' : 'text-gray-300 hover:text-ncwala-gold hover:bg-white/5'
                 }`}
               >
                 {link.label}
               </Link>
             ))}
+            {/* Language options in mobile menu */}
+            <div className="px-6 py-4 border-t border-ncwala-gold/20">
+              <p className="font-raleway text-xs text-ncwala-gold uppercase tracking-widest mb-3">Translate</p>
+              <div className="grid grid-cols-2 gap-2">
+                {languages.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => switchLanguage(lang.code)}
+                    className={`text-left font-raleway text-xs py-2 px-3 border transition-colors ${
+                      currentLang === lang.code
+                        ? 'border-ncwala-gold text-ncwala-gold'
+                        : 'border-white/10 text-gray-400 hover:border-ncwala-gold hover:text-ncwala-gold'
+                    }`}
+                  >
+                    {lang.label}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
         )}
       </nav>

@@ -376,7 +376,7 @@ export default function News() {
  <div className="border-t border-gray-200 pt-12 mb-8">
  <p className="font-raleway text-xs text-gray-400 uppercase tracking-widest">More Articles</p>
  </div>
- <div className="grid md:grid-cols-3 gap-8">
+ <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
  {rest.slice(2).map(a => (
  <ArticleCard key={a.id} article={a} />
  ))}

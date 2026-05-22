@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="h-0.5 bg-gradient-to-r from-transparent via-ncwala-gold to-transparent"></div>
 
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
 
           {/* Brand */}
           <div className="md:col-span-1">
@@ -88,7 +88,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-ncwala-gold/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-ncwala-gold/20 pt-8 flex flex-col items-center gap-3 text-center">
           <p className="font-raleway text-xs text-gray-600 uppercase tracking-widest">
             &copy; {currentYear} Ncwala Ceremony. All rights reserved.
           </p>

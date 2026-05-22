@@ -104,7 +104,7 @@ export default function History() {
 
  {/* Intro */}
  <div className="max-w-4xl mx-auto px-4 py-16 text-center">
- <h2 className="font-cinzel text-3xl text-ncwala-black mb-6">From the Banks of the Zambezi to the World Stage</h2>
+ <h2 className="font-cinzel text-xl md:text-3xl text-ncwala-black mb-6">From the Banks of the Zambezi to the World Stage</h2>
  <p className="font-garamond text-xl text-gray-700 leading-relaxed">
  The story of Ncwala is the story of a people who walked thousands of kilometres, survived conquest and colonialism, and emerged with their culture not just intact — but thriving. It is a story of warrior kings, sacred ceremonies, and an unbreakable bond between land, ancestors, and community.
  </p>
@@ -123,9 +123,9 @@ export default function History() {
  </div>
 
  {/* Timeline */}
- <div className="bg-gray-50 py-20 px-4">
+ <div className="bg-gray-50 py-12 md:py-20 px-4">
  <div className="max-w-4xl mx-auto">
- <h2 className="font-cinzel text-3xl text-ncwala-black mb-12 text-center section-heading">The Full Timeline</h2>
+ <h2 className="font-cinzel text-xl md:text-3xl text-ncwala-black mb-12 text-center section-heading">The Full Timeline</h2>
  <div className="relative">
  <div className="absolute left-6 md:left-8 top-0 bottom-0 w-0.5 bg-ncwala-gold/30"></div>
  <div className="space-y-8">
@@ -162,7 +162,7 @@ export default function History() {
  </div>
 
  {/* Pull Quote */}
- <div className="bg-ncwala-black text-ncwala-white py-20 px-4 gold-top-edge ngoni-pattern">
+ <div className="bg-ncwala-black text-ncwala-white py-12 md:py-20 px-4 gold-top-edge ngoni-pattern">
  <div className="max-w-3xl mx-auto text-center">
  <div className="text-ncwala-gold text-6xl font-cinzel-decorative mb-4">"</div>
  <blockquote className="font-garamond text-2xl md:text-3xl italic leading-relaxed">
@@ -179,10 +179,10 @@ export default function History() {
  <img src={gallery9} alt="Ngoni warriors with spears" className="w-full rounded-lg shadow-xl object-cover h-80" />
  </div>
  <p className="font-raleway text-xs text-gray-400 text-center mb-12">Photography by @Andy Luki Jr.</p>
- <div className="grid md:grid-cols-2 gap-16 items-start">
+ <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
  <div>
  <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-widest mb-3">Living Heritage</p>
- <h2 className="font-cinzel text-3xl text-ncwala-black mb-6">The Legacy Lives On</h2>
+ <h2 className="font-cinzel text-xl md:text-3xl text-ncwala-black mb-6">The Legacy Lives On</h2>
  <div className="space-y-4 font-garamond text-lg text-gray-700 leading-relaxed">
  <p>
  The Ngoni did not arrive in Eastern Zambia as refugees. They arrived as conquerors — proud, organised, and culturally intact. Their willingness to absorb and integrate neighbouring peoples is why the Ngoni kingdom grew so rapidly and why the Ncwala ceremony resonates beyond strictly Ngoni bloodlines today.

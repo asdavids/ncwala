@@ -51,7 +51,7 @@ export default function Blog() {
  <span className="inline-block bg-ncwala-gold text-ncwala-black font-raleway text-xs uppercase tracking-widest px-3 py-1 mb-4">
  {article.category}
  </span>
- <h1 className="font-cinzel text-2xl md:text-4xl text-white leading-tight drop-shadow-lg">
+ <h1 className="font-cinzel text-xl md:text-3xl text-white leading-tight drop-shadow-lg">
  {article.title}
  </h1>
  </div>
@@ -134,7 +134,7 @@ export default function Blog() {
  {related.length > 0 && (
  <div className="mt-16 pt-8 border-t border-gray-200">
  <p className="font-raleway text-xs text-ncwala-gold uppercase tracking-widest mb-6">More in {article.category}</p>
- <div className="grid md:grid-cols-2 gap-8">
+ <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
  {related.map(a => (
  <Link key={a.id} to={`/blog/${a.slug}`} className="group flex gap-4">
  <img src={a.image} alt={a.title} className="w-24 h-20 object-cover flex-shrink-0 rounded" />
