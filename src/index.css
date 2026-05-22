@@ -60,3 +60,25 @@ body {
 .nav-link-active {
   @apply text-ncwala-gold border-b-2 border-ncwala-gold;
 }
+
+/* Hide Google Translate toolbar */
+.goog-te-banner-frame,
+.goog-te-balloon-frame,
+#goog-gt-tt,
+.goog-te-balloon-frame,
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+iframe.goog-te-banner-frame {
+  display: none !important;
+}
