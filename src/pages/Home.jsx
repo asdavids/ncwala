@@ -24,10 +24,8 @@ export default function Home() {
   const [lightbox, setLightbox] = useState(null)
 
   useEffect(() => {
-    const today = new Date()
-    const currentYear = today.getFullYear()
-    let ncwalaDate = new Date(currentYear, 7, 15)
-    if (today > ncwalaDate) ncwalaDate = new Date(currentYear + 1, 7, 15)
+    // Ncwala 2026 — August 15, 2026
+    const ncwalaDate = new Date(2026, 7, 15)
 
     const interval = setInterval(() => {
       const now = new Date().getTime()
@@ -91,10 +89,22 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 2026 Announcement Banner */}
+      <section className="bg-ncwala-gold text-ncwala-black py-4 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+          <p className="font-raleway text-sm font-bold uppercase tracking-widest">
+            🥁 Ncwala 2026 — Preparations Are Underway. Chipata, Eastern Province, Zambia.
+          </p>
+          <a href="/blog/ncwala-2026-preparations-underway" className="font-raleway text-xs uppercase tracking-widest underline hover:no-underline whitespace-nowrap">
+            Read More →
+          </a>
+        </div>
+      </section>
+
       {/* Countdown Section */}
       <section className="bg-ncwala-red text-ncwala-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="font-cinzel text-4xl mb-12">Time Until Next Ncwala</h2>
+          <h2 className="font-cinzel text-4xl mb-12">Time Until Ncwala 2026</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { label: 'Days', value: countdown.days },

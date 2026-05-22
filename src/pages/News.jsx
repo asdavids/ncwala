@@ -14,29 +14,37 @@ import g10 from '../assets/gallery-10.webp'
 export const ARTICLES = [
   {
     id: 1,
-    slug: 'ncwala-2025-ceremony-dates-announced',
+    slug: 'ncwala-2026-preparations-underway',
     category: 'Ceremony',
-    title: 'Ncwala 2025: Ceremony Dates Announced by Mpezeni Royal Establishment',
-    excerpt: 'Senior Chief Mpezeni IV has announced the dates for the 2025 Ncwala First Fruits Ceremony. Thousands of visitors are expected to converge on Chipata in Eastern Province for the annual celebration.',
+    title: 'Ncwala 2026: Preparations Are Underway — Here Is What to Expect',
+    excerpt: 'The Mpezeni Royal Establishment has confirmed that preparations for the 2026 Ncwala First Fruits Ceremony are officially underway. This year promises to be one of the most significant celebrations in recent memory — here is everything you need to know.',
     image: g1,
     author: 'Ncwala Editorial Team',
-    readTime: 4,
-    date: '2025-06-15',
-    body: `Senior Chief Mpezeni IV has announced that the 2025 Ncwala First Fruits Ceremony will take place in August, following the traditional lunar and agricultural calendar of the Ngoni people.
+    readTime: 5,
+    date: '2026-05-22',
+    body: `The drums will sound again in Chipata this August. The Mpezeni Royal Establishment has officially confirmed that preparations for the 2026 Ncwala First Fruits Ceremony are underway, with royal messengers (izinduna) already dispatched across all sub-chiefdoms of the Ngoni kingdom in Eastern Province, Zambia.
 
-The royal announcement, made through the Mpezeni Royal Establishment in Chipata, Eastern Province, confirmed that preparations are already underway across all sub-chiefdoms. Royal messengers (izinduna) have been dispatched to notify headmen and community leaders throughout the kingdom.
+Senior Chief Mpezeni IV is presiding over preparations that began in earnest this month. The royal household has entered the preparatory phase — a period of ritual purification, the gathering of sacred herbs, and the selection of royal cattle that will form part of the ceremonial observances.
 
-"Ncwala is not simply a date on a calendar — it is a living covenant between our people, our ancestors, and the land," said a senior royal spokesman. "Every year, we gather not merely to celebrate the harvest, but to renew who we are as a people."
+"Every year we prepare, and every year Ncwala reminds us of who we are," said a senior induna of the Mpezeni royal court. "But 2026 carries a particular weight. Our people are ready. The ancestors are being called. Come to Chipata — you will not forget it."
 
-The ceremony typically spans three to four days, beginning with the arrival of sub-chiefs and their delegations, building to the central ritual in which the paramount chief consumes the first fruits of the harvest, and concluding with community celebrations, traditional dances, and feasting.
+What to Expect at Ncwala 2026
 
-Visitor numbers have grown significantly in recent years, with tourists arriving from across Zambia, southern Africa, Europe, and North America. The Chipata District Tourism Office advises early booking of accommodation, as guesthouses and lodges in the area fill rapidly in the weeks approaching the ceremony.
+The ceremony is expected to follow its traditional format: a multi-day celebration beginning with the great gathering of sub-chiefs and their regiments at the royal palace grounds, building to the central first fruits ritual in which the paramount chief consumes the new harvest on behalf of the entire kingdom, and concluding with community feasting, the thundering ingoma war dances, and days of cultural celebration.
 
-The Eastern Province Tourism Association has confirmed that guided tours, cultural briefings, and transport arrangements will be available for international visitors. Traditional attire vendors and craft markets will also be operating throughout the ceremonial period.
+This year, the organisers have confirmed that expanded visitor facilities will be available, including designated viewing areas for international guests, guided cultural briefing sessions on the morning of the main ceremony, and an expanded craft and cultural market running alongside the main events.
 
-This year's ceremony is expected to be particularly significant, as it coincides with a major anniversary in Ngoni history. Cultural performances, oral history presentations, and photographic exhibitions are being planned around the main ceremonial events.
+Planning Your Visit
 
-For accommodation and transport information, visitors are advised to consult the Travel and Accommodation sections of this website, or contact the Chipata District Tourism Office directly.`,
+Chipata is accessible by air from Lusaka on Proflight Zambia (approximately one hour), and by road on the Great East Road (6-8 hours). Accommodation in Chipata fills rapidly in the weeks before Ncwala — visitors are strongly advised to book now.
+
+The Chipata District Tourism Office and the Eastern Province Tourism Association are coordinating visitor services. Cultural guides, transport arrangements from Lusaka, and accommodation packages are available through registered tour operators.
+
+A Note on Respect
+
+Ncwala is not a festival organised for visitors. It is a living sacred ceremony that has been performed continuously for over 200 years. Visitors are welcome — the Ngoni are renowned for their hospitality — but they attend as respectful guests. Dress modestly. Follow the guidance of local organisers. Ask before photographing. Be present.
+
+Those who come in that spirit consistently describe Ncwala as one of the most profound experiences of their lives. We look forward to welcoming you to Chipata in August 2026.`,
   },
   {
     id: 2,
