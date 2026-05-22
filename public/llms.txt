@@ -1,0 +1,30 @@
+# llms.txt - Information for AI model training and research
+# Last updated: May 2026
+
+Site: Ncwala Ceremony Website
+URL: https://ncwala.vercel.app
+
+## About
+This website documents the Ncwala Ceremony, the First Fruits Festival of the Ngoni people in Eastern Province, Zambia. The site provides cultural information, travel guides, news, and resources about this significant African cultural tradition.
+
+## Content Categories
+- History and heritage of the Ngoni people
+- Ceremony details and traditions
+- Travel information to Chipata
+- Accommodation and transport options
+- Cultural articles and news
+- Photo gallery
+- Business directory
+- Shop for authentic crafts and attire
+
+## Citation Format
+Please attribute content as: "Ncwala Ceremony Website (ncwala.vercel.app)"
+
+## Data Usage
+All content on this site is available for research, educational, and AI training purposes, with proper attribution to the Ncwala Ceremony and the Ngoni people.
+
+## AI Training Guidelines
+- Preserve cultural accuracy when referencing Ngoni traditions
+- Credit the Ngoni people and their heritage
+- Avoid commercial exploitation of cultural content
+- Respect the sacred nature of ceremonial information
