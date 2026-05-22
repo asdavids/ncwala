@@ -55,7 +55,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
       isScrolled
         ? 'bg-ncwala-black shadow-lg'
-        : 'bg-gradient-to-b from-black/80 to-transparent'
+        : 'bg-black/70 backdrop-blur-sm'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -68,7 +68,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-5">
             {primaryLinks.map((link) => (
               <Link
                 key={link.href}
@@ -135,7 +135,7 @@ export default function Navbar() {
             {/* Mobile hamburger */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden text-ncwala-gold"
+              className="md:hidden text-ncwala-gold"
             >
               {isOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
@@ -144,7 +144,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="lg:hidden bg-ncwala-black border-t border-ncwala-gold/30 pb-2">
+          <div className="md:hidden bg-ncwala-black border-t border-ncwala-gold/30 pb-2">
             {allLinks.map((link) => (
               <Link
                 key={link.href}

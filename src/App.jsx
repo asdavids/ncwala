@@ -63,7 +63,7 @@ export default function App() {
         <div dir={isRTL ? 'rtl' : 'ltr'} className="min-h-screen flex flex-col">
           {showSplash && <SplashScreen onComplete={handleSplashComplete} />}
           <Navbar />
-          <main className="flex-grow pt-20">
+          <main className="flex-grow pt-16">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/history" element={<History />} />
