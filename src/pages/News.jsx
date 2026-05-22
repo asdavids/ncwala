@@ -12,17 +12,17 @@ import g9 from '../assets/gallery-9.webp'
 import g10 from '../assets/gallery-10.webp'
 
 export const ARTICLES = [
-  {
-    id: 1,
-    slug: 'ncwala-2026-preparations-underway',
-    category: 'Ceremony',
-    title: 'Ncwala 2026: Preparations Are Underway — Here Is What to Expect',
-    excerpt: 'The Mpezeni Royal Establishment has confirmed that preparations for the 2026 Ncwala First Fruits Ceremony are officially underway. This year promises to be one of the most significant celebrations in recent memory — here is everything you need to know.',
-    image: g1,
-    author: 'Ncwala Editorial Team',
-    readTime: 5,
-    date: '2026-05-22',
-    body: `The drums will sound again in Chipata this August. The Mpezeni Royal Establishment has officially confirmed that preparations for the 2026 Ncwala First Fruits Ceremony are underway, with royal messengers (izinduna) already dispatched across all sub-chiefdoms of the Ngoni kingdom in Eastern Province, Zambia.
+ {
+ id: 1,
+ slug: 'ncwala-2026-preparations-underway',
+ category: 'Ceremony',
+ title: 'Ncwala 2026: Preparations Are Underway — Here Is What to Expect',
+ excerpt: 'The Mpezeni Royal Establishment has confirmed that preparations for the 2026 Ncwala First Fruits Ceremony are officially underway. This year promises to be one of the most significant celebrations in recent memory — here is everything you need to know.',
+ image: g1,
+ author: 'Ncwala Editorial Team',
+ readTime: 5,
+ date: '2026-05-22',
+ body: `The drums will sound again in Chipata this August. The Mpezeni Royal Establishment has officially confirmed that preparations for the 2026 Ncwala First Fruits Ceremony are underway, with royal messengers (izinduna) already dispatched across all sub-chiefdoms of the Ngoni kingdom in Eastern Province, Zambia.
 
 Senior Chief Mpezeni IV is presiding over preparations that began in earnest this month. The royal household has entered the preparatory phase — a period of ritual purification, the gathering of sacred herbs, and the selection of royal cattle that will form part of the ceremonial observances.
 
@@ -45,18 +45,18 @@ A Note on Respect
 Ncwala is not a festival organised for visitors. It is a living sacred ceremony that has been performed continuously for over 200 years. Visitors are welcome — the Ngoni are renowned for their hospitality — but they attend as respectful guests. Dress modestly. Follow the guidance of local organisers. Ask before photographing. Be present.
 
 Those who come in that spirit consistently describe Ncwala as one of the most profound experiences of their lives. We look forward to welcoming you to Chipata in August 2026.`,
-  },
-  {
-    id: 2,
-    slug: 'history-of-the-zambezi-crossing-1835',
-    category: 'History',
-    title: 'The Zambezi Crossing of 1835: The Day That Defined the Ngoni Nation',
-    excerpt: 'On 19 November 1835, during a solar eclipse, Zwangendaba led the Ngoni people across the Zambezi River — a moment so extraordinary it has been passed down through oral tradition for nearly two centuries.',
-    image: g5,
-    author: 'Dr. Mwangi Phiri',
-    readTime: 8,
-    date: '2025-05-20',
-    body: `On 19 November 1835, a solar eclipse darkened the midday sky over the Zambezi River. In this dramatic moment of celestial convergence, the Ngoni people — led by the great chief Zwangendaba Jere — crossed the mighty river and entered what would become their permanent homeland.
+ },
+ {
+ id: 2,
+ slug: 'history-of-the-zambezi-crossing-1835',
+ category: 'History',
+ title: 'The Zambezi Crossing of 1835: The Day That Defined the Ngoni Nation',
+ excerpt: 'On 19 November 1835, during a solar eclipse, Zwangendaba led the Ngoni people across the Zambezi River — a moment so extraordinary it has been passed down through oral tradition for nearly two centuries.',
+ image: g5,
+ author: 'Dr. Mwangi Phiri',
+ readTime: 8,
+ date: '2025-05-20',
+ body: `On 19 November 1835, a solar eclipse darkened the midday sky over the Zambezi River. In this dramatic moment of celestial convergence, the Ngoni people — led by the great chief Zwangendaba Jere — crossed the mighty river and entered what would become their permanent homeland.
 
 It is one of the most remarkable moments in the history of southern Africa, and nearly two centuries later, it remains at the core of Ngoni cultural identity.
 
@@ -75,18 +75,18 @@ The date of the Zambezi crossing is still commemorated in Ngoni oral tradition. 
 The 1835 crossing also serves as a powerful metaphor in contemporary Ngoni identity. The journey from South Africa to Zambia — across rivers, through enemy territories, surviving wars and famine and colonial conquest — is invoked as evidence of the Ngoni capacity for resilience, adaptation, and cultural survival.
 
 When warriors dance the ingoma at Ncwala, they are not merely performing. They are embodying that journey — feet striking the same earth their ancestors crossed nearly two hundred years ago.`,
-  },
-  {
-    id: 3,
-    slug: 'ngoni-warrior-tradition-ibutho-system',
-    category: 'Culture',
-    title: 'The Ibutho System: How the Ngoni Warrior Brotherhood Shaped a Nation',
-    excerpt: 'The age-regiment system inherited from Zulu tradition created bonds of brotherhood that transcended family and clan — and still echoes in the dances, structures, and values of Ngoni society today.',
-    image: g9,
-    author: 'Chanda Mulenga',
-    readTime: 6,
-    date: '2025-04-10',
-    body: `Long before the Ngoni arrived in what is now Zambia, they had perfected a social technology that would prove central to their survival, expansion, and cultural identity: the ibutho, or age-regiment system.
+ },
+ {
+ id: 3,
+ slug: 'ngoni-warrior-tradition-ibutho-system',
+ category: 'Culture',
+ title: 'The Ibutho System: How the Ngoni Warrior Brotherhood Shaped a Nation',
+ excerpt: 'The age-regiment system inherited from Zulu tradition created bonds of brotherhood that transcended family and clan — and still echoes in the dances, structures, and values of Ngoni society today.',
+ image: g9,
+ author: 'Chanda Mulenga',
+ readTime: 6,
+ date: '2025-04-10',
+ body: `Long before the Ngoni arrived in what is now Zambia, they had perfected a social technology that would prove central to their survival, expansion, and cultural identity: the ibutho, or age-regiment system.
 
 Inherited from their Zulu ancestors and refined over decades of migration, the ibutho system organised young men into groups based on age. All boys born within a span of a few years would be enrolled in the same regiment — trained together, initiated together, and expected to serve together as warriors under the king's command.
 
@@ -103,18 +103,18 @@ Today, the ibutho system no longer organises military service, but its cultural 
 The values associated with the ibutho — courage, discipline, brotherhood, loyalty to community over self-interest — are still explicitly invoked in Ngoni moral discourse. Young men are encouraged to embody these values, even in modern urban contexts far from the ceremony ground in Chipata.
 
 The ibutho also explains the Ngoni attitude toward outsiders who attend Ncwala. The tradition of absorption means that the Ngoni are, at their cultural core, welcoming to those who come in good faith. You do not have to be born Ngoni to be recognised as Ngoni. You simply have to show up, act with respect, and participate. That openness — the willingness to bring others into the circle — has always been at the heart of what makes the Ngoni who they are.`,
-  },
-  {
-    id: 4,
-    slug: 'first-fruits-meaning-ncwala-ritual',
-    category: 'Ceremony',
-    title: 'What Does "First Fruits" Actually Mean? The Spiritual Heart of Ncwala',
-    excerpt: 'The concept of "first fruits" is ancient, found across cultures from the Hebrew Bible to the Zulu kingdom. For the Ngoni, it carries a specific and profound spiritual logic that shapes everything about the Ncwala ceremony.',
-    image: g4,
-    author: 'Rev. Banda Zulu',
-    readTime: 7,
-    date: '2025-03-05',
-    body: `The phrase "first fruits" appears in traditions across the world — from the Hebrew Bible's Feast of Firstfruits to the Zulu Umkhosi Wokweshwama, from the Shona Kurova Guva to harvest ceremonies across West Africa. It is one of humanity's oldest religious ideas: that the first of the new harvest belongs not to the people who grew it, but to a higher power.
+ },
+ {
+ id: 4,
+ slug: 'first-fruits-meaning-ncwala-ritual',
+ category: 'Ceremony',
+ title: 'What Does "First Fruits" Actually Mean? The Spiritual Heart of Ncwala',
+ excerpt: 'The concept of "first fruits" is ancient, found across cultures from the Hebrew Bible to the Zulu kingdom. For the Ngoni, it carries a specific and profound spiritual logic that shapes everything about the Ncwala ceremony.',
+ image: g4,
+ author: 'Rev. Banda Zulu',
+ readTime: 7,
+ date: '2025-03-05',
+ body: `The phrase "first fruits" appears in traditions across the world — from the Hebrew Bible's Feast of Firstfruits to the Zulu Umkhosi Wokweshwama, from the Shona Kurova Guva to harvest ceremonies across West Africa. It is one of humanity's oldest religious ideas: that the first of the new harvest belongs not to the people who grew it, but to a higher power.
 
 For the Ngoni, this ancient idea is given precise, living expression in Ncwala.
 
@@ -133,18 +133,18 @@ The first fruits themselves — typically maize, sorghum, pumpkin, and other cro
 Understanding this helps visitors make sense of the ceremony's emotional power. When you watch the paramount chief in full regalia approaching the assembled first fruits, you are witnessing a moment of profound spiritual seriousness. The thousands of assembled Ngoni are not watching a performance. They are present at a moment of covenant — the renewal of the relationship between their community and everything that sustains it.
 
 That is what "first fruits" means at Ncwala. And that is why it has been performed without interruption for over two hundred years.`,
-  },
-  {
-    id: 5,
-    slug: 'ngoni-beadwork-regalia-symbolism',
-    category: 'Culture',
-    title: 'Reading the Regalia: What Every Bead, Skin and Feather at Ncwala Means',
-    excerpt: 'To the uninformed eye, Ngoni ceremonial dress is simply beautiful. To those who can read it, every element — every bead pattern, every animal skin, every feather — tells a precise story of identity, rank and ancestry.',
-    image: g10,
-    author: 'Thandiwe Moyo',
-    readTime: 6,
-    date: '2025-02-18',
-    body: `At Ncwala, you will see thousands of people dressed in ways that might initially seem uniform — animal skins, beadwork, headdresses, ceremonial weapons. Look more carefully, and you begin to realise that each person's dress is a precise statement of identity, rank, lineage, and spiritual status.
+ },
+ {
+ id: 5,
+ slug: 'ngoni-beadwork-regalia-symbolism',
+ category: 'Culture',
+ title: 'Reading the Regalia: What Every Bead, Skin and Feather at Ncwala Means',
+ excerpt: 'To the uninformed eye, Ngoni ceremonial dress is simply beautiful. To those who can read it, every element — every bead pattern, every animal skin, every feather — tells a precise story of identity, rank and ancestry.',
+ image: g10,
+ author: 'Thandiwe Moyo',
+ readTime: 6,
+ date: '2025-02-18',
+ body: `At Ncwala, you will see thousands of people dressed in ways that might initially seem uniform — animal skins, beadwork, headdresses, ceremonial weapons. Look more carefully, and you begin to realise that each person's dress is a precise statement of identity, rank, lineage, and spiritual status.
 
 Ngoni ceremonial regalia is not costume. It is a language — one that Ngoni people can read fluently, and one that visitors can begin to learn.
 
@@ -161,18 +161,18 @@ Body markings — white clay painted in geometric patterns on the torso, face, a
 The ceremonial weapons — spears, shields, knobkerries — are not merely symbolic, though they carry deep symbolic weight. The traditional short spear reflects the close-combat style of Ngoni warfare. The shield, made from cowhide, represents the protection of the community. To carry these at Ncwala is to embody the warrior tradition that has always protected the Ngoni kingdom.
 
 For visitors, the practical implication of all this is that watching Ncwala with some knowledge of what the regalia means transforms the experience completely. You are no longer watching a colourful spectacle — you are reading a living text, written in skin and bead and feather, that tells the story of a people across centuries.`,
-  },
-  {
-    id: 6,
-    slug: 'chipata-travel-guide-ncwala-visitors',
-    category: 'Travel',
-    title: "Visitor's Guide to Chipata: Getting There, Getting Around, and Making the Most of Ncwala",
-    excerpt: 'Chipata, the capital of Eastern Province and home of the Ngoni kingdom, is a warm, welcoming city with everything a visitor needs. Here is everything you need to know to make your Ncwala trip unforgettable.',
-    image: g2,
-    author: 'Eastern Province Tourism',
-    readTime: 9,
-    date: '2025-01-30',
-    body: `Chipata is a city that surprises visitors. Often overlooked in favour of Lusaka or the national parks of western Zambia, it is in fact one of the most culturally rich and personally welcoming destinations in the country — and during Ncwala, it becomes arguably the most exciting place in southern Africa.
+ },
+ {
+ id: 6,
+ slug: 'chipata-travel-guide-ncwala-visitors',
+ category: 'Travel',
+ title: "Visitor's Guide to Chipata: Getting There, Getting Around, and Making the Most of Ncwala",
+ excerpt: 'Chipata, the capital of Eastern Province and home of the Ngoni kingdom, is a warm, welcoming city with everything a visitor needs. Here is everything you need to know to make your Ncwala trip unforgettable.',
+ image: g2,
+ author: 'Eastern Province Tourism',
+ readTime: 9,
+ date: '2025-01-30',
+ body: `Chipata is a city that surprises visitors. Often overlooked in favour of Lusaka or the national parks of western Zambia, it is in fact one of the most culturally rich and personally welcoming destinations in the country — and during Ncwala, it becomes arguably the most exciting place in southern Africa.
 
 Here is what you need to know to make the most of your visit.
 
@@ -209,18 +209,18 @@ The Zambian Kwacha (ZMW) is the currency. ATMs are available in Chipata town cen
 Cultural Preparation
 
 The greatest gift you can give yourself before attending Ncwala is preparation. Read about the ceremony, its history, and its meaning. The more you understand what you are witnessing, the more profound the experience will be. The Ngoni are extraordinarily hospitable to visitors who come with genuine curiosity and respect — your engagement will be warmly received.`,
-  },
-  {
-    id: 7,
-    slug: 'ngoni-ingoma-dance-explained',
-    category: 'Culture',
-    title: 'The Ingoma Dance: More Than Movement — A Living Act of Memory',
-    excerpt: 'The ingoma war dance performed at Ncwala is one of the most powerful cultural performances in southern Africa. Understanding what it is — and what it is not — transforms the experience of watching it.',
-    image: g7,
-    author: 'Professor Zulu Banda',
-    readTime: 7,
-    date: '2024-12-12',
-    body: `When hundreds of Ngoni warriors in full regalia begin the ingoma at Ncwala, the effect is physical. The synchronised stamping of feet creates a vibration you feel in your chest before you hear it with your ears. The unified shouts pierce the air. The sight of massed warriors in leopard skins and feathered headdresses, moving as one body, is something visitors describe as genuinely overwhelming.
+ },
+ {
+ id: 7,
+ slug: 'ngoni-ingoma-dance-explained',
+ category: 'Culture',
+ title: 'The Ingoma Dance: More Than Movement — A Living Act of Memory',
+ excerpt: 'The ingoma war dance performed at Ncwala is one of the most powerful cultural performances in southern Africa. Understanding what it is — and what it is not — transforms the experience of watching it.',
+ image: g7,
+ author: 'Professor Zulu Banda',
+ readTime: 7,
+ date: '2024-12-12',
+ body: `When hundreds of Ngoni warriors in full regalia begin the ingoma at Ncwala, the effect is physical. The synchronised stamping of feet creates a vibration you feel in your chest before you hear it with your ears. The unified shouts pierce the air. The sight of massed warriors in leopard skins and feathered headdresses, moving as one body, is something visitors describe as genuinely overwhelming.
 
 It is also deeply misunderstood by those who have not been prepared to receive it properly.
 
@@ -237,18 +237,18 @@ The vocal element — the shouts, the chants, the responses — is equally signi
 When you watch the ingoma with this understanding, what you see changes fundamentally. Those are not just men dancing. They are an entire civilisation, moving together, remembering together, affirming together that they are still here — that the migration did not break them, that the wars did not destroy them, that the colonial conquest did not erase them.
 
 For visitors, the most appropriate response to the ingoma is not applause (though this is not necessarily inappropriate during more festive moments) — it is stillness, attention, and respect. You are witnessing something genuinely sacred. The gift of your full presence and attention is the most valuable thing you can offer.`,
-  },
-  {
-    id: 8,
-    slug: 'mpezeni-kingdom-history-chipata',
-    category: 'History',
-    title: 'The Kingdom of Mpezeni: How One Man Built an Empire in Eastern Zambia',
-    excerpt: "Mpezeni I was one of the most formidable figures in 19th century African history — a conqueror, a statesman, and a cultural architect whose kingdom still shapes Eastern Province to this day.",
-    image: g3,
-    author: 'Ncwala Editorial Team',
-    readTime: 8,
-    date: '2024-11-05',
-    body: `When Mpezeni I arrived in what is now Eastern Province of Zambia in the 1850s, he was a chief without a kingdom. His father, Zwangendaba, had died in present-day Tanzania, triggering a bitter succession dispute among the Ngoni. Mpezeni took his followers south and west, away from the conflict, searching for land where he could build something permanent.
+ },
+ {
+ id: 8,
+ slug: 'mpezeni-kingdom-history-chipata',
+ category: 'History',
+ title: 'The Kingdom of Mpezeni: How One Man Built an Empire in Eastern Zambia',
+ excerpt: "Mpezeni I was one of the most formidable figures in 19th century African history — a conqueror, a statesman, and a cultural architect whose kingdom still shapes Eastern Province to this day.",
+ image: g3,
+ author: 'Ncwala Editorial Team',
+ readTime: 8,
+ date: '2024-11-05',
+ body: `When Mpezeni I arrived in what is now Eastern Province of Zambia in the 1850s, he was a chief without a kingdom. His father, Zwangendaba, had died in present-day Tanzania, triggering a bitter succession dispute among the Ngoni. Mpezeni took his followers south and west, away from the conflict, searching for land where he could build something permanent.
 
 What he built was extraordinary.
 
@@ -269,121 +269,121 @@ The military confrontation came in January 1898. BSAC forces, armed with modern 
 But the kingdom did not end. Mpezeni I was eventually released, and the British, recognising that ruling Eastern Province without Ngoni cooperation was impractical, allowed the chieftaincy to continue. The current paramount chief, Senior Chief Mpezeni IV, is a direct lineal descendant of Mpezeni I, and his authority — though now operating within the framework of the Zambian state — is as real in Eastern Province today as it was in the 19th century.
 
 Mpezeni I died in 1900, just two years after the conquest. But the kingdom he built, the ceremony he presided over, and the cultural identity he forged survive him by more than a century.`,
-  },
+ },
 ]
 
 const categories = ['All', 'Ceremony', 'History', 'Culture', 'Travel']
 
 function ArticleCard({ article, featured = false }) {
-  return (
-    <Link to={`/blog/${article.slug}`} className="group block">
-      <div className={`overflow-hidden ${featured ? 'h-72 md:h-96' : 'h-52'} relative`}>
-        <img
-          src={article.image}
-          alt={article.title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-        <span className="absolute top-4 left-4 bg-ncwala-gold text-ncwala-black font-raleway text-xs uppercase tracking-widest px-3 py-1">
-          {article.category}
-        </span>
-      </div>
-      <div className="pt-4">
-        <h3 className={`font-cinzel text-ncwala-black group-hover:text-ncwala-red transition-colors leading-snug ${featured ? 'text-2xl' : 'text-base'}`}>
-          {article.title}
-        </h3>
-        <p className="font-garamond text-gray-600 mt-2 leading-relaxed text-sm line-clamp-2">{article.excerpt}</p>
-        <div className="flex items-center gap-4 mt-3 text-xs text-gray-400 font-raleway">
-          <span className="flex items-center gap-1"><User size={12} /> {article.author}</span>
-          <span className="flex items-center gap-1"><Clock size={12} /> {article.readTime} min read</span>
-          <span>{new Date(article.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
-        </div>
-        <span className="inline-flex items-center gap-1 mt-3 text-ncwala-red font-raleway text-xs uppercase tracking-widest group-hover:gap-2 transition-all">
-          Read Article <ArrowRight size={12} />
-        </span>
-      </div>
-    </Link>
-  )
+ return (
+ <Link to={`/blog/${article.slug}`} className="group block">
+ <div className={`overflow-hidden ${featured ? 'h-72 md:h-96' : 'h-52'} relative`}>
+ <img
+ src={article.image}
+ alt={article.title}
+ className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+ />
+ <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+ <span className="absolute top-4 left-4 bg-ncwala-gold text-ncwala-black font-raleway text-xs uppercase tracking-widest px-3 py-1">
+ {article.category}
+ </span>
+ </div>
+ <div className="pt-4">
+ <h3 className={`font-cinzel text-ncwala-black group-hover:text-ncwala-red transition-colors leading-snug ${featured ? 'text-2xl' : 'text-base'}`}>
+ {article.title}
+ </h3>
+ <p className="font-garamond text-gray-600 mt-2 leading-relaxed text-sm line-clamp-2">{article.excerpt}</p>
+ <div className="flex items-center gap-4 mt-3 text-xs text-gray-400 font-raleway">
+ <span className="flex items-center gap-1"><User size={12} /> {article.author}</span>
+ <span className="flex items-center gap-1"><Clock size={12} /> {article.readTime} min read</span>
+ <span>{new Date(article.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+ </div>
+ <span className="inline-flex items-center gap-1 mt-3 text-ncwala-red font-raleway text-xs uppercase tracking-widest group-hover:gap-2 transition-all">
+ Read Article <ArrowRight size={12} />
+ </span>
+ </div>
+ </Link>
+ )
 }
 
 export default function News() {
-  const [activeCategory, setActiveCategory] = useState('All')
+ const [activeCategory, setActiveCategory] = useState('All')
 
-  const filtered = activeCategory === 'All'
-    ? ARTICLES
-    : ARTICLES.filter(a => a.category === activeCategory)
+ const filtered = activeCategory === 'All'
+ ? ARTICLES
+ : ARTICLES.filter(a => a.category === activeCategory)
 
-  const [featured, ...rest] = filtered
+ const [featured, ...rest] = filtered
 
-  return (
-    <>
-      <Helmet>
-        <title>News & Articles — Ncwala Ceremony & Ngoni Culture | Zambia</title>
-        <meta name="description" content="Latest news, history, and cultural articles about the Ncwala First Fruits Ceremony and the Ngoni people of Eastern Province, Zambia." />
-      </Helmet>
+ return (
+ <>
+ <Helmet>
+ <title>News & Articles — Ncwala Ceremony & Ngoni Culture | Zambia</title>
+ <meta name="description" content="Latest news, history, and cultural articles about the Ncwala First Fruits Ceremony and the Ngoni people of Eastern Province, Zambia." />
+ </Helmet>
 
-      {/* Header */}
-      <div className="bg-ncwala-black text-ncwala-white py-20 px-4 text-center">
-        <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-[0.4em] mb-4">Stories & Knowledge</p>
-        <h1 className="font-cinzel-decorative text-4xl md:text-6xl mb-4">News & Articles</h1>
-        <div className="w-16 h-0.5 bg-ncwala-gold mx-auto mb-6"></div>
-        <p className="font-garamond text-lg text-gray-300 max-w-2xl mx-auto">
-          Ceremony updates, cultural deep-dives, historical accounts, and travel guides — everything you need to understand and experience Ncwala and the Ngoni people.
-        </p>
-      </div>
+ {/* Header */}
+ <div className="bg-ncwala-black text-ncwala-white py-20 px-4 text-center">
+ <p className="font-raleway text-ncwala-gold text-xs uppercase tracking-[0.4em] mb-4">Stories & Knowledge</p>
+ <h1 className="font-cinzel-decorative text-4xl md:text-6xl mb-4">News & Articles</h1>
+ <div className="w-16 h-0.5 bg-ncwala-gold mx-auto mb-6"></div>
+ <p className="font-garamond text-lg text-gray-300 max-w-2xl mx-auto">
+ Ceremony updates, cultural deep-dives, historical accounts, and travel guides — everything you need to understand and experience Ncwala and the Ngoni people.
+ </p>
+ </div>
 
-      {/* Category Filter */}
-      <div className="bg-gray-50 border-b border-gray-200 sticky top-20 z-40">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex gap-3 flex-wrap">
-          {categories.map(cat => (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              className={`font-raleway text-xs uppercase tracking-widest px-5 py-2 transition-all ${
-                activeCategory === cat
-                  ? 'bg-ncwala-red text-white'
-                  : 'bg-white text-gray-600 border border-gray-300 hover:border-ncwala-gold hover:text-ncwala-gold'
-              }`}
-            >
-              {cat}
-              <span className="ml-2 opacity-50">
-                {cat === 'All' ? ARTICLES.length : ARTICLES.filter(a => a.category === cat).length}
-              </span>
-            </button>
-          ))}
-        </div>
-      </div>
+ {/* Category Filter */}
+ <div className="bg-gray-50 border-b border-gray-200 sticky top-20 z-40">
+ <div className="max-w-7xl mx-auto px-4 py-4 flex gap-3 flex-wrap">
+ {categories.map(cat => (
+ <button
+ key={cat}
+ onClick={() => setActiveCategory(cat)}
+ className={`font-raleway text-xs uppercase tracking-widest px-5 py-2 transition-all ${
+ activeCategory === cat
+ ? 'bg-ncwala-red text-white'
+ : 'bg-white text-gray-600 border border-gray-300 hover:border-ncwala-gold hover:text-ncwala-gold'
+ }`}
+ >
+ {cat}
+ <span className="ml-2 opacity-50">
+ {cat === 'All' ? ARTICLES.length : ARTICLES.filter(a => a.category === cat).length}
+ </span>
+ </button>
+ ))}
+ </div>
+ </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        {/* Featured article */}
-        {featured && (
-          <div className="mb-16">
-            <p className="font-raleway text-xs text-ncwala-gold uppercase tracking-widest mb-6">Featured</p>
-            <div className="grid md:grid-cols-2 gap-8 items-start">
-              <ArticleCard article={featured} featured={true} />
-              <div className="space-y-8 pt-2">
-                {rest.slice(0, 2).map(a => (
-                  <ArticleCard key={a.id} article={a} />
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
+ <div className="max-w-7xl mx-auto px-4 py-16">
+ {/* Featured article */}
+ {featured && (
+ <div className="mb-16">
+ <p className="font-raleway text-xs text-ncwala-gold uppercase tracking-widest mb-6">Featured</p>
+ <div className="grid md:grid-cols-2 gap-8 items-start">
+ <ArticleCard article={featured} featured={true} />
+ <div className="space-y-8 pt-2">
+ {rest.slice(0, 2).map(a => (
+ <ArticleCard key={a.id} article={a} />
+ ))}
+ </div>
+ </div>
+ </div>
+ )}
 
-        {/* Rest of articles */}
-        {rest.length > 2 && (
-          <>
-            <div className="border-t border-gray-200 pt-12 mb-8">
-              <p className="font-raleway text-xs text-gray-400 uppercase tracking-widest">More Articles</p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8">
-              {rest.slice(2).map(a => (
-                <ArticleCard key={a.id} article={a} />
-              ))}
-            </div>
-          </>
-        )}
-      </div>
-    </>
-  )
+ {/* Rest of articles */}
+ {rest.length > 2 && (
+ <>
+ <div className="border-t border-gray-200 pt-12 mb-8">
+ <p className="font-raleway text-xs text-gray-400 uppercase tracking-widest">More Articles</p>
+ </div>
+ <div className="grid md:grid-cols-3 gap-8">
+ {rest.slice(2).map(a => (
+ <ArticleCard key={a.id} article={a} />
+ ))}
+ </div>
+ </>
+ )}
+ </div>
+ </>
+ )
 }
