@@ -81,14 +81,17 @@ export default function Home() {
       </section>
 
       {/* Mourning Banner */}
-      <section className="bg-black text-white py-4 px-4 border-b border-gray-700">
+      <section className="bg-black text-white py-4 px-4 border-b border-gray-800">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="font-cinzel text-sm md:text-base tracking-wide text-gray-200">
-            In Memoriam — Paramount Chief Mpezeni IV
+          <p className="font-cinzel text-sm md:text-base tracking-widest text-gray-200">
+            In Memoriam &mdash; Paramount Chief Mpezeni IV
           </p>
-          <p className="font-garamond text-xs md:text-sm text-gray-400 mt-1 italic">
-            Inkosi Yama Nkosi — King of Kings of the Ngoni People &middot; Reigned 1982 – 2026 &middot; May he rest with the ancestors
+          <p className="font-garamond text-xs md:text-sm text-gray-400 mt-1">
+            Born David Njengembazo Jele &middot; Inkosi Yama Nkosi of the Ngoni People &middot; Aged 70 &middot; Reigned 1982 &ndash; 2026
           </p>
+          <a href="/blog/in-memoriam-paramount-chief-mpezeni-iv" className="inline-block mt-2 font-raleway text-xs uppercase tracking-widest text-ncwala-gold hover:text-white transition-colors underline">
+            Read Full Tribute
+          </a>
         </div>
       </section>
 
