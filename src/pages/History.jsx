@@ -57,7 +57,7 @@ const timeline = [
  {
  period: 'Present Day',
  title: 'A Living Tradition for the World',
- content: `Today, Ncwala is one of Zambia's most celebrated cultural events, drawing thousands of visitors annually to Chipata every August. The ceremony is broadcast on national television, documented by international journalists, and studied by scholars of African culture. The current paramount chief, Senior Chief Mpezeni IV, presides over a ceremony that remains as spiritually vital as ever. Young Ngoni people — including those in the diaspora in Europe, North America, and beyond — return home for Ncwala, making it as much a reunion as a religious observance.`,
+ content: `Today, Ncwala is one of Zambia's most celebrated cultural events, drawing thousands of visitors annually to Chipata every August. The ceremony is broadcast on national television, documented by international journalists, and studied by scholars of African culture. The Ngoni nation mourns the recent passing of Paramount Chief Mpezeni IV, who reigned for 44 years and presided over Ncwala with dignity and devotion. The royal succession process will determine the next paramount chief in accordance with Ngoni tradition. Young Ngoni people — including those in the diaspora in Europe, North America, and beyond — return home for Ncwala, making it as much a reunion as a religious observance.`,
  highlight: 'Celebrated annually every August in Chipata',
  },
 ]

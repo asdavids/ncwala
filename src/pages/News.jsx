@@ -272,7 +272,7 @@ Mpezeni I died in 1900, just two years after the conquest. But the kingdom he bu
  },
 ]
 
-const categories = ['All', 'Ceremony', 'History', 'Culture', 'Travel']
+const categories = ['All', 'Announcement', 'Ceremony', 'History', 'Culture', 'Travel']
 
 function ArticleCard({ article, featured = false }) {
  return (

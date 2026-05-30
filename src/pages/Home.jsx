@@ -80,15 +80,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2026 Banner */}
-      <section className="bg-ncwala-gold text-ncwala-black py-3 px-4">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
-          <p className="font-raleway text-sm font-bold uppercase tracking-widest">
-            Ncwala 2026 — Preparations Are Underway. Chipata, Eastern Province, Zambia.
+      {/* Mourning Banner */}
+      <section className="bg-black text-white py-4 px-4 border-b border-gray-700">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="font-cinzel text-sm md:text-base tracking-wide text-gray-200">
+            In Memoriam — Paramount Chief Mpezeni IV
           </p>
-          <a href="/blog/ncwala-2026-preparations-underway" className="font-raleway text-xs uppercase tracking-widest underline hover:no-underline whitespace-nowrap">
-            Read More
-          </a>
+          <p className="font-garamond text-xs md:text-sm text-gray-400 mt-1 italic">
+            Inkosi Yama Nkosi — King of Kings of the Ngoni People &middot; Reigned 1982 – 2026 &middot; May he rest with the ancestors
+          </p>
         </div>
       </section>
 
